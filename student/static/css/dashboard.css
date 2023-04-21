@@ -1,0 +1,53 @@
+.mainCardContainer {
+  display: flex;
+  justify-content: center;
+}
+.cardContainer {
+  min-height: 300px;
+  max-height: 600px;
+  background-color: white;
+  width: 30%;
+  margin: 12px 23px;
+}
+.box {
+  border: 2px solid #9456c8;
+  height: 230px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+}
+.box .heading {
+  font-weight: 600;
+}
+.box:hover {
+  background-color: #9456c8;
+  color: white;
+}
+.button button {
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid #9556c88c;
+  background: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  color: #9556c8;
+}
+.button button:hover {
+  background-color: #9456c8;
+  color: white;
+}
+@media (max-width: 900px) {
+  .mainCardContainer {
+    flex-wrap: wrap;
+  }
+  .cardContainer {
+    width: 90%;
+  }
+}

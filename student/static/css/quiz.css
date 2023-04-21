@@ -1,0 +1,146 @@
+.mainContianer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.quizNav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.quizNav h1 {
+  font-size: 3rem;
+  color: #ff3494;
+}
+.quizNav span {
+  font-size: 1.5rem;
+}
+.quizContainer {
+  width: 80%;
+  /* margin: 80px auto 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 700px;
+  box-shadow: 0 0 5px 0 #ff349487;
+}
+#quizQuestion {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); */
+  width: 90%;
+  padding: 12px 23px;
+}
+/* .optionsOfQuiz{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 1.11rem;
+} */
+.options {
+  display: flex;
+  /* flex-direction: column; */
+  /* empty-cells: inherit; */
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.options div {
+  margin: 20px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: 450px;
+  box-shadow: 0 0 5px 0 #ff349487;
+  padding: 12px 10px;
+  background-color: white;
+}
+.options div:last-child {
+  box-shadow: none;
+}
+.options div input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+.options div label {
+  margin-left: 10px;
+}
+.buttonContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+}
+.buttonContainer button {
+  width: 50%;
+}
+#quizMan {
+  position: fixed;
+  bottom: -10px;
+  left: -40px;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .quizNav {
+    /* font-size: 2.5rem; */
+    height: 300px;
+  }
+  .quizNav span {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 870px) {
+  .quizNav h1 {
+    font-size: 2.5rem;
+  }
+  #quizMan {
+    left: -56px;
+  }
+}
+@media (max-width: 730px) {
+  .quizNav {
+    height: 270px;
+  }
+  .quizNav h1 {
+    font-size: 2rem;
+  }
+  .quizNav span {
+    font-size: 1.2rem;
+  }
+  #quizQuestion {
+    font-size: 1.2rem;
+  }
+  .options div {
+    font-size: 1.2rem;
+    margin: 15px;
+  }
+}
+@media (max-width: 590px) {
+  .quizNav {
+    padding: 12px;
+    width: 90%;
+  }
+  .options div {
+    margin: 15px 10px;
+    width: auto;
+  }
+}
+
+@media (max-height: 600px) {
+  .mainContianer {
+    min-height: 600px;
+  }
+}

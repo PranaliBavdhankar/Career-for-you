@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="">
+    <script type="text/javascript"> window.CSRF_TOKEN = "{% csrf_token %}"; </script>
+<head>
+    {% block head %}{% include '../partial/head.html' %}{% endblock %}
+</head>
+
+<body class="hold-transition lockscreen" style="background-image: url(/static/landingPage/img/shape/header-sape3.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+    <div class="lockscreen-wrapper" >
+        {% block content-body %}
+                    {% endblock %}
+       
+    </div>
+
+    {% block javascript %}{% include '../partial/javascript.html' %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% load static %}
+<title>Career4U -Personalise your career journey </title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Theme style -->
+<link rel="stylesheet" href="{% static 'userPanel/css/adminlte.min.css' %}" />
+<!-- icheck bootstrap -->
+<link rel="stylesheet" href="{% static 'userPanel/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}" />
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{% static 'userPanel/plugins/fontawesome-free/css/all.min.css' %}" />
+<!-- overlayScrollbars -->
+<link rel="stylesheet" href="{% static 'userPanel/plugins/overlayScrollbars/css/OverlayScrollbars.min.css' %}">
+<!-- DataTables -->
+<link rel="stylesheet" href="{% static 'userPanel/plugins/datatables-bs4/css/dataTables.bootstrap4.css' %}">
+<!--Sweetalerts-->
+<link rel="stylesheet" href="{% static 'userPanel/js/sweetalert/sweetalert.min.css' %}" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<style>.error{color:red;}.required{color: #ff0000;} .text-color{color:white;}</style>
+<link rel="stylesheet" href="{% static 'userPanel/js/select2/select2.min.css' %}"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg==" crossorigin="anonymous" />
+<!-- CSS only
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+<style>
+    .loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+.custom_loader{position: absolute;width: 100%;z-index: 999;top: 40px;}
+.custom_loader .loader{margin: 0 auto;}
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.box-info {
+    border-top-color: #00c0ef;
+}
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: #00c0ef !important;
+    color: #fff !important;
+}
+</style>

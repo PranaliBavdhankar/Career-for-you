@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>myCareer || Home</title>
+  <link rel="stylesheet" href=" {% static '/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <h4>It's free and only takes a minute</h4>
+    <form action="/user/do_register/" method="POST">
+      {% csrf_token %}
+      <label>First Name</label>
+      <input type="text" name="fname" autocomplete="on" />
+      <label>Last Name</label>
+      <input type="text" name="lname" autocomplete="on" />
+      <label>Email</label>
+      <input type="email" name="email" autocomplete="on" required />
+      <label>Password</label>
+      <input type="password" name="pwd" autocomplete="off" />
+      <label>Confirm Password</label>
+      <input type="password" autocomplete="off" name="conPwd" />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      By clicking the Sign Up button,you agree to our <br />
+      <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+    </p>
+    <p class="para-2">
+      Already have an account? <a href="{% url 'login' %}">Login here</a>
+    </p>
+  </div>
+  <script src="{% static '/js/script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px auto;
+    width: 900px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px #FF3494, -1px -1px 5px 2px #FF3494;
+    cursor: pointer;
+    transition: 0.4s;
+}
+ 
+@media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+}
+h1{
+    margin-left: 10px;
+}
+h2{
+    margin-left: 10px;
+	font-size:0.7cm;
+	color:#800080;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+/*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+*/
+.card1{
+    margin: 30px auto;
+    width: 900px;
+	
+    height: 190px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px #FF3494, -1px -1px 5px 2px #FF3494;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card1 h2{
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+margin-top:20px;
+}
+.card1 p{
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+}
+.card2{
+    margin: 30px auto;
+    width: 900px;
+    height: 190px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px #FF3494, -1px -1px 5px 2px #FF3494;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card2 h2{
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+margin-top:20px;
+}
+.card2 p{
+padding-right:40px;
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+}
+.card2 p{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.card3{
+    margin: 30px auto;
+    width: 900px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px #FF3494, -1px -1px 5px 2px #FF3494;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card3 h2{
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+margin-top:20px;
+}
+.card3 p{
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+}
+
+.swayam{
+    width:200px;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: px;
+}
+
+.diksha{
+    float: right;
+    width:170px;
+    height: 100px;
+    margin-right: 200px;
+    margin-top: -160px;
+}

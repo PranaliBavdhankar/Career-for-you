@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCareers || Quiz</title>
+  <!-- <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/CSS/link.css" /> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/common.css' %}" /> -->
+  <link rel="stylesheet" href="{% static 'css/quiz.css' %}" />
+  <link rel="stylesheet" href="{% static 'landingPage/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'landingPage/css/responsive.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+  <div id="quizMan">
+    <img src="{% static 'landingPage/img/bg/quizMan.svg' %}" alt="">
+  </div>
+  <div class="mainContianer">
+    <div class="quizNav">
+      <h1>Career4U Assessment</h1>
+      <span>
+        For each of the statement below choose the number between 1 to 5 to
+        rate how they describes you.
+      </span>
+    </div>
+    <div class="quizContainer">
+      <div id="quizQuestion">
+        1. &nbsp;&nbsp;&nbsp;I feel comfortable working with language,
+        words and enjoy crosswords and other word
+        games like Scrabble.
+      </div>
+      <div class="options">
+        <div>
+          <input type="radio" name="options" class="optionNumbers" id="opt1" />
+          <label for="opt1"> No, the statement is not at all like me. </label>
+        </div>
+        <div>
+          <input type="radio" name="options" class="optionNumbers" id="opt2" />
+          <label for="opt2"> The statement is little like me. </label>
+        </div>
+        <div>
+          <input type="radio" name="options" class="optionNumbers" id="opt3" />
+          <label for="opt3"> The statement is somewhat like me. </label>
+        </div>
+        <div>
+          <input type="radio" name="options" class="optionNumbers" id="opt4" />
+          <label for="opt4"> The statement is a lot like me </label>
+        </div>
+        <div>
+          <input type="radio" name="options" class="optionNumbers" id="opt5" />
+          <label for="opt5"> Yes, the statement is definitely me. </label>
+        </div>
+        <div></div>
+      </div>
+      <div class="buttonContainer">
+        <button class="btn ss-btn primaryButton" id="quizNext" onclick="GoToNextQues()">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  let quizQuestionContainer = document.getElementById("quizQuestion");
+  let optionNumbers = document.getElementsByName("options");
+  let submitButton = document.querySelector('#quizNext');
+  let quizQuestion = [
+    // verbal
+    `I like to read books a lot and enjoy keeping a
+written journal and/or writing stories and
+articles`,
+    `I find it easy to explain things to others and
+enjoy participating in debates and/or
+discussions.`,
+    // logical
+    `I enjoy maths ,using numbers and playing
+brainteasers and logic puzzles.`,
+    `I like to ask ‘why’ questions and quickly grasp
+cause and effect relationships.`,
+    `I work best in an organised work area and
+work best when I have a day planner or
+timetable.`,
+
+
+    // Spatial
+    `I understand colour combinations very well
+and what colours work well together.`,
+
+    `I read charts and maps easily and have a
+good sense of direction and enjoy solving
+jigsaw, maze and/or other visual
+puzzles.`,
+    `I can picture scenes in my head when I
+remember things and can anticipate the
+moves and consequences in a game plan (i.e.,
+hockey sense, chess sense).`,
+
+    // Musical
+    `I often play music in my mind, thus when I
+listen to music my mood changes.`,
+    `I find it easy to engage in musical activities.`,
+    `I can remember pieces of music easily and it
+is easy for me to follow the beat of music.`,
+    // Interpersonal
+    `I work best when interacting with people and
+prefer group activities rather than ones I do
+alone.`,
+    `I enjoy social events like parties and enjoy
+sharing my ideas and feelings with others.`,
+    `I enjoy team activities rather than individual
+activity.`,
+
+    // Naturaslistic
+    `I enjoy watching nature programs on television.`,
+    `I like planting and caring for a garden
+and can easily notice similarities and
+differences in trees, flowers and other things in
+nature.`,
+    `Pollution makes me angry.
+I feel very strongly about protecting the
+environment.`,
+
+    // Body/Kinesthetic
+    `I enjoy participating in active sports and I tend
+to touch objects and examine their texture.`,
+    `I prefer to be physically involved rather than
+sitting and watching and understand best by
+doing (i.e. touching, moving and interacting).`,
+    `I prefer to be physically involved rather than
+sitting and watching.`,
+
+    // Intrapersonal
+    `I enjoy working on my own and don't prefer to
+work with others also I have a few close
+friends.`,
+    `I have a good understanding of my feelings
+and how I will react to situations.`,
+    `I have a my firm opinion on questions
+concerning values and beliefs and am not
+easily influenced by other people.`,
+
+  ];
+  //   let passedQues = [`I feel comfortable working with language,
+  // words and enjoy crosswords and other word
+  // games like Scrabble.`];
+  var noOfQuesPassed = 0;
+  var noOfQues = 2;
+  {
+    function GoToNextQues() {
+
+      if (noOfQues == 24) {
+        submitButton.innerHTML = 'Submit';
+      }
+      for (
+        let optionNumbersCount = 0;
+        optionNumbersCount < optionNumbers.length;
+        optionNumbersCount++
+      ) {
+        if (
+          optionNumbers[0].checked ||
+          optionNumbers[1].checked ||
+          optionNumbers[2].checked ||
+          optionNumbers[3].checked ||
+          optionNumbers[4].checked
+        ) {
+        var randnomValue = Math.floor(
+          Math.random() * quizQuestion.length
+        );
+        let que = quizQuestion[randnomValue];
+        quizQuestionContainer.innerHTML =
+          noOfQues + ")&nbsp;&nbsp;&nbsp;" + que;
+        quizQuestion.splice(randnomValue, 1);
+        noOfQues++;
+        for (
+          let deSelect = 0;
+          deSelect < optionNumbers.length;
+          deSelect++
+        ) {
+          optionNumbers[deSelect].checked = false;
+        }
+        break;
+        }
+         else {
+           alert("Please choose any one of the option");
+           break;
+        }
+        console.log(noOfQuesPassed, que);
+      }
+    }
+
+  }
+</script>
+
+</html>

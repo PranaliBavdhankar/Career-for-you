@@ -1,0 +1,134 @@
+{% extends "user/layouts/app.html" %}
+
+{% block content-header %}
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-sm-4">
+            <h1 class="m-0 text-dark">Profile</h1>
+        </div><!-- /.col -->
+
+        <!-- <div class="col-sm-2">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div>/.col -->
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="card card-default color-palette-box">
+                <div class="card-header">
+                    <h3 class="card-title">User Profile</h3>
+                </div>
+
+
+                <form action="/user/update_profile/" method="POST">
+                    {% csrf_token %}
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name</label>
+                                    <input type="text" class="form-control" name="fname" value="{{fname}}">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Last Name</label>
+                                    <input type="text" class="form-control" name="lname" value="{{lname}}">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Email</label>
+                                    <input type="text" class="form-control" name="email" readonly value="{{email}}">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone No</label>
+                                    <input type="text" class="form-control" name="mobileno" readonly value="{{mobileno}} ">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Date of Birth</label>
+                                    <input type="date" class="form-control" name="dob" id="dob" value="{{dob}}" >
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Age</label>
+                                    <input type="number" class="form-control" name="age" id="age" value="{{age}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Gender</label>
+                                    <select class="form-control" name="gender" id="gender" value="{{gender}}" required>
+                                        {% if gender != 'NULL' %}
+                                        <option value="{{gender}}">{{gender}}</option>
+                                        {% endif %}
+                                        <option value="none">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">female</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Current Education</label>
+                                    <input type="text" class="form-control" name="education" id="education" value="{{currentEducation}}">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Family Income</label>
+                                    <input type="text" class="form-control" name="income" id="income" value="{{income}}">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">I wish to become</label>
+                                    <textarea  class="form-control" name="goals" id="goals" cols="30" rows="3" required>{{goals}}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <input type="hidden" name="sid" id="sid" value="{{sid}}" />
+                        
+
+                        
+                        
+                    </div>
+
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary" style="background: transparent linear-gradient(45deg, #7D4196 0%, #FF3494 100%) 0% 0% no-repeat padding-box !important;">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

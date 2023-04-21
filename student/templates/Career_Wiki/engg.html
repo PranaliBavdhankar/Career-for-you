@@ -1,0 +1,472 @@
+<!doctype html>
+<!-- {% load static %} -->
+<!-- <html class="no-js" lang="zxx"> -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Career Wiki - Engineering</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="shortcut icon" href="{% static 'images/images/logo/favicon.jpg' %}" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'landingPage/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/dripicons.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/Career_Wiki/engineering.css' %}">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header-area" style="background: #190a32;">
+        <div id="header-sticky" class="menu-area">
+            <div class="container">
+                <div class="second-menu">
+                    <div class="row align-items-center">
+                        <div class="col-xl-1 col-lg-2">
+                            <div class="logo">
+                                <a href="{% url 'index' %}"><img class="rounded-circle"
+                                        src="{% static 'images/Images/Logo/logo.jpeg' %}" alt="logo"
+                                        style="width:70px;padding-top:10px;padding-bottom:10px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="responsive"><i class="icon dripicons-align-right"></i></div>
+                            <div class="main-menu text-right text-xl-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-sub">
+                                            <a href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li><a href="{% url 'about' %}">About Us</a></li>
+                                        <li><a href="{% url 'multipleIntelligence' %}" >Multiple Intelligence</a></li>
+                                        <li><a href="{% url 'careerWiki' %}"  style="color: #ff3494;">Career Wiki</a></li>
+                                        <!-- <li class="has-sub"> 
+                                                 <a href="#screen">Other</a>
+                                                 <ul>													
+													<li><a href="#pricing">Pricing</a></li>
+													<li><a href="#testimonios">Testimonios</a></li>
+													 <li><a href="blog.html">Blog</a></li>     
+													<li><a href="blog-details.html">Blog Deatils</a></li> 
+												</ul>
+                                             
+                                            </li>      -->
+                                        <!-- <li><a href="#blog">Blog</a></li> -->
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="{% url 'login' %}" class="btn">Login</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-1 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="{% url 'signup' %}" class="btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+    <!-- main-area -->
+    <main>
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area d-flex align-items-center"
+            style="background-image:url({% static 'landingPage/img/bg/career4u.png' %}); background-position: center center; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="breadcrumb-wrap text-center">
+                            <div class="breadcrumb-title mt-70">
+                                <h2 class="text-dark mt-70"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+
+        <!--Edited by nidhish-->
+
+        <div class="middle_content" style="height:cm">
+            <center>
+                <h1 class="engineering">Engineering</h1>
+
+                <img src="{% static 'images/engineering/Engineering.svg' %}" class="engineering_logo">
+
+                <summary class="summary">Engineering is an application of Science and Math to solve problems.While
+                    scientists and inventors come up with innovations, it is engineers who apply these discoveries to
+                    the real world.</summary>
+
+                <h4 style="margin-top:1cm;">In which field of Engineering tou are interested in ?</h4>
+
+            </center>
+            <!--1st line of grid-->
+            <!--Aeronautical Engineering-->
+            <div class="aeronautical">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 153653.png' %}" class="aeronautical_logo">
+                <a href="{% url 'engg_aeroNautical' %}">
+                    <center>
+                        <h4 class="aeronautical_text">Aeronautical Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Aerospace Engineering-->
+            <div class="aerospace">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 153848.png' %}" class="aerospace_logo">
+                <a href="{%url 'engg_aeroSpace' %}">
+                    <center>
+                        <h4 class="aerospace_text">Aerospace Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Architecture Engineering-->
+            <div class="architecture">
+                <img src="{% static 'images/engineering/Engineering.svg' %}" class="architecture_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="architecture_text">Architecture Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Artificial Intelligence-->
+            <div class="ai">
+                <img src="{% static 'images/engineering/AI.png' %}" class="ai_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="ai_text">Artificial Intelligence</h4>
+                    </center>
+                </a>
+            </div>
+
+        </div>
+
+        <!--2nd line of grid-->
+        <div class="middle_content_2nd_line" style="height:cm">
+
+            <!--Automobile Engineering-->
+            <div class="aeronautical">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 154713.png' %}" class="aeronautical_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="aeronautical_text">Automobile Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Bio Medical Engineering-->
+            <div class="aerospace">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 154847.png' %}" class="aerospace_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="aerospace_text">Bio Medical Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Bio Technology Engineering-->
+            <div class="biotech">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 154943.png' %}" class="biotech_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="biotech_text">Bio Technology Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Chemical Intelligence-->
+            <div class="chemical">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 155108.png' %}" class="chemical_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="chemical_text">Chemical Engineering</h4>
+                    </center>
+                </a>
+            </div>
+        </div>
+
+        <!--3rd line of grid-->
+        <div class="middle_content_2nd_line" style="height:cm">
+
+            <!--Civil Engineering-->
+            <div class="civil">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 155232.png' %}" class="civil_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="civil_text">Civil Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Computer Science Engineering-->
+            <div class="comp">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 155451.png' %}" class="comp_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="comp_text">Computer Science Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Electronics Engineering-->
+            <div class="electronics">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 155655.png' %}" class="electronics_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="electronics_text">Electronics Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Industrial Engineering-->
+            <div class="industrial">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 155843.png' %}" class="industrial_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="industrial_text">Industrial Engineering</h4>
+                    </center>
+                </a>
+            </div>
+        </div>
+
+        <!--4th line of grid-->
+        <div class="middle_content_2nd_line" style="height:cm">
+
+            <!-- Instrumentation Engineering-->
+            <div class="instrument">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 160114.png' %}" class="instrument_logo">
+                <a href="#">
+                    <center>
+                        <h5 class="insturment_text">Instrumentation Engineering</h5>
+                    </center>
+                </a>
+            </div>
+
+            <!--Marine Engineering-->
+            <div class="marine">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 160201.png' %}" class="marine_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="marine_text">Marine Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Mechanical Engineering-->
+            <div class="mech">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 160328.png' %}" class="mech_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="mech_text">Mechanical Engineering</h4>
+                    </center>
+                </a>
+            </div>
+
+            <!--Metallurgy Engineering-->
+            <div class="metallurgy">
+                <img src="{% static 'images/engineering/Screenshot 2022-08-19 160453.png' %}" class="metallurgy_logo">
+                <a href="#">
+                    <center>
+                        <h4 class="ai_text">Metallurgy Engineering</h4>
+                    </center>
+                </a>
+            </div>
+        </div>
+
+        <!--Requirements for engineering-->
+        <img src="{% static 'images/engineering/Screenshot 2022-08-10 230607.png' %}" class="how_to_logo">
+        <h3 class="how_to">Requirements for Engineering </h3>
+
+        <h4 class="streams">Stream to Choose at +2 level:</h4>
+        <p class="how_to_01">Take Science stream with Physics, Chemistry, Mathematics and English at the +2 level.</p>
+
+        <h4 class="streams">Subjects to focus:</h4>
+        <p class="how_to_focus">The most important subjects to focus on are Maths and Physics as it forms the base for
+            the engineering curriculum. Chemistry at the higher secondary level also has importance. Students should
+            give importance to other subjects as well to obtain a high aggregate percentage.</p>
+
+        <p class="how_to_01">After graduating from high school, prospective engineers will need to earn a bachelor’s
+            degree from a school accredited by the Accreditation Board of Engineering and Technology (ABET). ABET
+            employs over 2,200 engineering experts from the public and private sectors to evaluate key factors in an
+            engineering program, and ensure that they’re up to industry standards. In an era of distance learning
+            options, ABET’s stamp of approval is more important than ever.</p>
+
+        <img src="{% static 'images/engineering/right_wrong.png' %}" class="how_to_logo_01">
+        <h3 class="colleges">Colleges you can apply for</h3>
+        <div class="list">
+            <ul class="list_of_colleges">
+                <li> Indian Institute of Technology, Bombay.</li>
+                <li> Indian Institute of Technology, Madras.</li>
+                <li> Indian Institute of Technology, Delhi.</li>
+                <li> Indian Institute of Technology, Kharagpur.</li>
+                <li> Indian Institute of Technology, Kanpur.</li>
+                <li> Indian Institute of Technology, Roorkee.</li>
+                <li> Indian Institute of Technology, Guwahati.</li>
+            </ul>
+        </div>
+
+
+
+    </main>
+
+    </div>
+
+    </main>
+    <!-- main-area-end -->
+    <!-- footer -->
+    <footer class="footer-bg footer-p pt-60" style="background-image: url({% static 'landingPage/img/bg/f-bg.png' %});
+        background-position: center top;
+        background-size: auto;
+        background-repeat: no-repeat;">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="logo mt-15 mb-15">
+                                <a href="#"><img class="rounded-circle"
+                                        src="{% static 'images/Images/Logo/logo.jpeg' %}" alt="logo"
+                                        style="width: 100px;"></a>
+                            </div>
+                            <div class="footer-text mb-20">
+                                <p>Personalise your career journey <br />
+                                    with Career4U </p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Company News</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Partners</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Useful Links</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Project</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Contact Us</h5>
+                            </div>
+                            <div class="footer-link">
+                                <div class="f-contact">
+                                    <ul>
+                                        <li>
+                                            <i class="icon dripicons-phone"></i>
+                                            <span>1800-121-3637<br>+91 555 234-8765</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon dripicons-mail"></i>
+                                            <span><a href="mailto:info@example.com">info@example.com</a><br><a
+                                                    href="mailto:sale@example.com">sale@example.com</a></span>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-map-marker-alt"></i>
+                                            <span>380 St Kilda Road, Melbourne<br>VIC 3004, Australia</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text">
+                            <p>&copy; 2020 @ Bengle All design Zcube.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+
+    <!-- JS here -->
+    <script src="{% static 'landingPage/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/popper.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/one-page-nav-min.js' %}"></script>
+    <script src="{% static 'landingPage/js/slick.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/ajax-form.js' %}"></script>
+    <script src="{% static 'landingPage/js/paroller.js' %}"></script>
+    <script src="{% static 'landingPage/js/wow.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/js_isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/parallax.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/typed.js' %}"></script>
+    <script src="{% static 'landingPage/js/parallax-scroll.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/element-in-view.js' %}"></script>
+    <script src="{% static 'landingPage/js/swiper.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>

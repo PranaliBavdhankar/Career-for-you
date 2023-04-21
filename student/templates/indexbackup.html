@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myCareer || Home</title>
+    <link rel="stylesheet" href=" {% static '/css/style.css' %}" />
+    <link rel="stylesheet" href=" {% static '/css/style1.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/whatWe.css' %}" />
+    <!--<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />-->
+    <link
+      rel="shortcut icon"
+      href="{% static '/images/Images/Logo/logo.jpeg' %}"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <section class="main">
+      <nav id="nav">
+        <ul class="left">
+          <li>
+            <a href="#" style="display: flex; justify-content: center">
+              <img
+                src="{% static '/images/Images/Logo/logo.jpeg' %}"
+                width="70px"
+                alt=""
+                style="border-radius: 50%"
+            /></a>
+          </li>
+        </ul>
+        <ul class="center">
+          <li>
+            <a href="#"><span class="navCenterItemSpan"> Home </span></a>
+          </li>
+          <li>
+            <a href="#"><span class="navCenterItemSpan"> About Us </span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="navCenterItemSpan"> For Students </span></a
+            >
+            &nbsp;&nbsp;&nbsp;
+            <span style="display: flex; align-content: center"
+              ><img
+                src="{% static '/images/SVGS/uparrow.svg' %}"
+                width="10px"
+                alt=""
+            /></span>
+          </li>
+        </ul>
+        <ul class="right">
+          <li style="cursor: pointer">
+            <a href="{% url 'login' %}">
+              <span id="login" class="bordersFill"> Login </span>
+            </a>
+          </li>
+          <li style="cursor: pointer">
+            <a href="{% url 'signup' %}"
+              ><span id="register" class="bordersFill"> Get Started </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="home" id="home">
+        <span class="homeHeading">
+          <div style="font-size: 2rem; text-align: left; margin-left: 30px">
+            <img
+              src="{% static '/images/SVGS/doublequots.svg' %}"
+              width="25px"
+              alt=""
+            />
+            <h1>Personalise your career journey</h1>
+            <h1>
+              with
+              <span class="" style="color: #9456c8; font-size: 3.3rem">
+                Careers4U
+              </span>
+            </h1>
+          </div>
+          <div
+            style="
+              margin-top: 30px;
+              font-size: 1.5rem;
+              color: gray;
+              text-align: left;
+              margin-left: 30px;
+            "
+          >
+            <div>
+              'Career4U' assists students explore their interests using Howard
+              Gardner's theory of ‘Multiple Intelligence’ and assists to choose
+              future career paths and skilling options.We provide real-time
+              insights of your top three intelligence and possible future
+              careeoptions waiting to welcome you.
+            </div>
+            <div>
+              We provide real-time insights of your top three intelligence and
+              possible future career options waiting to welcome you.
+            </div>
+          </div>
+        </span>
+        <span class="bgBrainImageContainer">
+          <img
+            src="{% static '/images/Images/Home/intelligence.png' %}"
+            class="bgBrainImage"
+            alt=""
+          />
+          <img
+            src="{% static '/images/Images/Home/unshapedBg1.png' %}"
+            alt=""
+            class="homeunshapedBg"
+          />
+        </span>
+      </section>
+      <section id="ourPrograms">
+        <div class="ourProgrmasImage">
+          <img
+            src="{% static '/images/SVGS/laptopUser.svg' %}"
+            style="width: 550px"
+            alt=""
+          />
+        </div>
+        <div class="ourProgramsContent">
+          <h1>Our Progrmas</h1>
+          <div class="ourProgramsCardContainer">
+            <div class="ourProgrmsCard">
+              <div class="ourProgrmsCardHeading">For Juniors</div>
+              <div class="ourProgrmsCardContent">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                iusto incidunt perspiciatis eveniet autem? Quis dolores ipsa
+                labore! Amet voluptas repudiandae consequatur harum illum
+                quibusdam eum cupiditate qui. Recusandae, cumque molestias!
+                Accusamus expedita ipsa nostrum, perferendis quasi iste! Hic
+                quas aperiam exercitationem labore eum, consequuntur porro.
+                Libero unde, veritatis officiis ad amet odit distinctio
+                aspernatur officia fugit. Odio, dolorem totam voluptas
+                accusantium dicta voluptatum expedita magnam enim cupiditate ut
+                praesentium, laudantium incidunt sapiente quam explicabo
+                quibusdam reprehenderit iusto accusamus, asperiores itaque
+                debitis suscipit ducimus aspernatur odit? Blan
+              </div>
+              <li class="outProgramsButton" style="cursor: pointer">
+                <a href="/user/login/">
+                  <span class="bordersFill"> Login </span>
+                </a>
+              </li>
+            </div>
+            <div class="ourProgrmsCard">
+              <div class="ourProgrmsCardHeading">For Seniors</div>
+              <div class="ourProgrmsCardContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+                eveniet porro minus id tempore dolore vero omnis, doloremque ut
+                recusandae delectus ad excepturi quod veniam sed facere suscipit
+                esse corporis exercitationem assumenda dolores quibusdam vitae!
+                Maiores, iure consequatur consequuntur amet sit labore eius
+                itaque numquam odio accusamus ipsa deserunt vitae, delectus
+                fugit tenetur, quaerat nesciunt. Minima, labore! Culpa,
+                architecto. Aspernatur, sed? Blanditiis assumenda distinctio,
+                molestiae officia iusto, eaque eius officiis fugiat accusamus
+                qui magnam nostrum aliquid tempore dolores deserunt maiores.
+              </div>
+              <li class="outProgramsButton" style="cursor: pointer">
+                <a href="/user/login/">
+                  <span class="bordersFill"> Login </span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="differentKindsOfSmartNess">
+        <h1>Different Kind of intelligences!</h1>
+        <div class="line"></div>
+        <p>Let your Intelligence be your career guide.</p>
+        <div class="smartImagesContainer">
+          <!-- <div class="smartImage"> -->
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\logical.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\intraPersonal.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\naturalists.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\bodilyIntelligence.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\linguistic.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\musicial.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\spatial.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="smartImage"
+              src="{% static '\images\Images\Smart Ness\interpresonal.jpg' %}"
+              alt=""
+            />
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </section>
+  </body>
+
+  <script src="{% static '/js/script.js' %}"></script>
+</html>

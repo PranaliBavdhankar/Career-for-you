@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCareers Portal || Student Dashboard</title>
+  
+  <link rel="stylesheet" href=" {% static '/css/style.css' %}" />
+  <link rel="stylesheet" href=" {% static '/css/style1.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    #nav .left li {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="nav" style="justify-content: space-between;">
+    <ul class="left">
+      <li onclick="showHideLoggedInLeft()">
+        <a> <img src="/ASSESTS/SVGS/hamburger.svg" width="25px" alt=""> </a>
+      </li>
+      <li>
+        <a href="#"><span> logo </span></a>
+      </li>
+    </ul>
+    <ul class="center"></ul>
+    <ul class="right">
+      <li style="cursor: pointer">
+        <a><span id="register" class="bordersFill"> View Profil </span></a>
+      </li>
+      <li>
+        <a href=""> <span><img src="/ASSESTS/SVGS/message.svg" width="30px" alt=""></span> </a>
+      </li>
+      </li>
+      <li>
+        <a href=""> <span><img src="/ASSESTS/SVGS/bell.svg" width="25px" alt=""></span> </a>
+      </li>
+      <li style="cursor: auto;">
+        <a> <span><img src="/ASSESTS/images/User/user.png" width="35px" alt=""></span> </a>
+      </li>
+      <li class="LoggedInName" style="display: flex; justify-content: center; align-items: center">
+        <a style="display: flex; justify-content: center; align-items: center"> <span> Pranav Bavdhankar </span> <span
+            style="margin-left: 10px;"> <img src="/ASSESTS/SVGS/downarrow.svg" width="10px" alt=""> </span> </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="loggedInMainSection">
+    <div class="navLeft" id="navLeft">
+      <ul>
+        <a href="/loggedIn.html">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/home.svg" width="25px"
+                alt=""> </span>
+            <span class="navLeftName" style="color: blue;"> Dashboard </span>
+          </li>
+        </a>
+        <a href="/userProfile.html">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/profile.svg" width="25px"
+                alt=""> </span>
+            <span class="navLeftName"> User Profile </span>
+          </li>
+        </a>
+        <a href="/careerProfile.html">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/edit.svg" width="25px"
+                alt=""> </span>
+            <span class="navLeftName"> Career Profile </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/bulb.svg" width="25px"
+                alt=""> </span>
+            <span class="navLeftName"> Personal Insights </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/direction.svg"
+                width="25px" alt=""> </span>
+            <span class="navLeftName"> Learning Pathways </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/computer.svg"
+                width="25px" alt=""> </span>
+            <span class="navLeftName"> Suggested Courses </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="/ASSESTS/SVGS/book.svg" width="25px"
+                alt=""> </span>
+            <span class="navLeftName"> Blog </span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div id="container" class="flexCenter">
+      <h1>Welcome <span> Pranav Bavdhankar </span></h1>
+      <div class="profileBox">
+        <div class="profileBoxName flexCenter">
+          <img src="/ASSESTS/Images/User/user.png" width="50px" alt="">
+          <h2>Pranav Bavdhankar</h2>
+        </div>
+        <div class="profileBoxBody">
+          <h4>Personality Traits</h4>
+          <!-- <span id="personalityTraits" >Not Yet Added</span> -->
+          <div class="personalityTraitsItems">
+            <span>UI DESIGN</span>
+            <span>HTML 5</span>
+            <span>CSS 3</span>
+          </div>
+        </div>
+
+        <div class="profileCompleted">
+          Profile Completed <span class="amountOfProfileCompleted"> 50% </span>
+        </div>
+        <div>
+
+          <button class="bordersFill editButton">Edit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="/JS/script.js">
+</script>
+
+</html>

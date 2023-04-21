@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>myCareer || Home</title>
+  <link rel="stylesheet" href=" {% static '/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="content">
+    <header>Login</header>
+    <form action="/user/do_login/" method="POST">
+      {% csrf_token %}
+      <div class="field">
+        <span class="fa fa-user"></span>
+        <input type="text" required placeholder="Email" name="email" autocomplete="on" />
+      </div>
+      <div class="field space">
+        <span class="fa fa-lock"></span>
+        <input type="password" class="pass-key" required placeholder="Password" name="pwd" autocomplete="off" />
+        <span class="show">SHOW</span>
+      </div>
+      <div class="pass">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="field">
+        <input type="submit" value="LOGIN" />
+      </div>
+    </form>
+    <div class="signup">
+      Don't have account?
+      <a href="{% url 'signup' %}">Signup Now</a>
+    </div>
+  </div>
+  <script src="{% static '/js/script.js' %}"></script>
+  <script>
+    const pass_field = document.querySelector(".pass-key");
+    const showBtn = document.querySelector(".show");
+    const loginpage = document.getElementsByClassName("content");
+    const main = document.getElementsByClassName("main");
+    const setUp = document.getElementsByClassName("setUpContainer");
+    const closeLoginandSignUp = document.getElementById(
+      "closeLoginandSignUp"
+    );
+    showBtn.addEventListener("click", function () {
+      if (pass_field.type === "password") {
+        pass_field.type = "text";
+        showBtn.textContent = "HIDE";
+        showBtn.style.color = "#3498db";
+      } else {
+        pass_field.type = "password";
+        showBtn.textContent = "SHOW";
+        showBtn.style.color = "#222";
+      }
+    });
+  </script>
+</body>
+
+</html>

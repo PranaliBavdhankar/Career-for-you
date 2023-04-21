@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  width: 90%;
+}
+.bold {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.gray {
+  color: gray;
+  font-size:1.2rem ;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

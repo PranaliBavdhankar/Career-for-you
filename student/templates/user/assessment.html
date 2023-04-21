@@ -1,0 +1,54 @@
+{% extends "user/layouts/app.html" %}
+
+{% block content-header %}
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-sm-4">
+            <h1 class="m-0 text-dark">Assesment</h1>
+        </div><!-- /.col -->
+
+        <!-- <div class="col-sm-2">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div>/.col -->
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="card card-default color-palette-box">
+                <div class="card-header">
+                    <h1 class="card-title">Instructions</h1>
+                </div>
+
+                <div class="card-body">
+                   <h6>In this section, you will be asked different questions which help
+                    us personalize your experience further. Please note that we do not
+                    share any of the responses you give in this section with the
+                    employers. This section is completely to analyse you for better
+                    career planning and this section directly impacts the Career
+                    Insights Section and all your recommendations. Please, it is
+                    recommended to be honest and answer these questions seriously.</h6>
+                   </br>
+                    <p><b>Note :</b>You won't be able to edit your response later, hence start only when you are free. </p>
+                    <p style="color: red;">Total time needed: 25-30 minutes. </p>
+
+                    <a href="{% url 'quiz' %}" >
+                        <button class="btn btn-primary" style="background: transparent linear-gradient(45deg, #7D4196 0%, #FF3494 100%) 0% 0% no-repeat padding-box !important;"> Start Analyzing</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

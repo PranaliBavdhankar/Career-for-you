@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career4U || Home</title>
+  <link rel="stylesheet" href="{% static '/css/index.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/nav.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/common.css' %}" />
+
+  <style>
+    :root {
+      --mav: #9456c8;
+    }
+
+    df-messenger {
+      --df-messenger-button-titlebar-color: #9456c8;
+      --df-messenger-user-message: #9456c8;
+      --df-messenger-bot-message: #9456c8;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <a href="{% url 'index' %}">
+        <li>
+          <img src="{% static '/images/Images/Logo/logo.jpeg' %}" width="70" alt="" />
+        </li>
+      </a>
+    </ul>
+    <ul>
+      <a href="">
+        <li>Home</li>
+      </a>
+      <a href="{% url 'about' %}">
+        <li>About Us</li>
+      </a>
+      <a href="">
+        <li>Why <b style="color: #9456c8"> Career4U </b> ?</li>
+      </a>
+      <a href="">
+        <li>Career Wiki</li>
+      </a>
+    </ul>
+    <ul>
+      <div onclick="toggleNav()" class="hamburgerLogo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <a class="loginButton" href="{% url 'login' %}">
+        <li>
+          <button class="primaryButton">Login</button>
+        </li>
+      </a>
+      <a href="{% url 'signup' %}">
+        <li>
+          <button class="primaryButton">Get Started</button>
+        </li>
+      </a>
+    </ul>
+  </nav>
+  <div class="hamburgerNavbar">
+    <ul>
+      <a href="">
+        <li>Home</li>
+      </a>
+      <a href="">
+        <li>About Us</li>
+      </a>
+      <a href="">
+        <li>Why <b style="color: #9456c8"> Career4U </b> ?</li>
+      </a>
+      <a href="">
+        <li>Career Wiki</li>
+      </a>
+      <a class="loginButton" href="{% url 'login' %}">
+        <li>
+          <button class="primaryButton">Login</button>
+        </li>
+      </a>
+      <a href="{% url 'signup' %}">
+        <li>
+          <button class="primaryButton">Get Started</button>
+        </li>
+      </a>
+    </ul>
+  </div>
+
+  <section id="home">
+    <div class="part1">
+      <img src="{% static '/images/SVGs/doublequots.svg' %}" width="30" alt="" />
+      <div class="homeHeading">
+        Personalise your career journey <br />
+        with <span style="color: #9456c8; font-weight: 600"> Career4U </span>
+      </div>
+      <div class="homeContent">
+        'Career4U' assists students explore their interests using Howard
+        Gardner's theory of ‘Multiple Intelligence’ and assists to choose
+        future career paths and skilling options.We provide real-time insights
+        of your top three intelligence and possible future careeoptions
+        waiting to welcome you.
+      </div>
+    </div>
+    <div class="part2">
+      <img src="{% static '/images/Images/home/intelligence.png' %}" alt="" />
+    </div>
+  </section>
+  <section id="ourPrograms">
+    <div class="part1">
+      <h1>Our Programs</h1>
+      <img src="{% static '/images/SVGs/laptopUser.svg' %}" alt="" />
+    </div>
+    <div class="part2">
+      <h1>Our Programs</h1>
+      <div class="ourProgramsCardsContainer">
+        <div class="ourProgramsCard">
+          <div class="ourProgramsCardHeading">Career4U(Juniors)</div>
+          <div class="ourProgramsCardBody">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis adipisci commodi nulla. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Ducimus aliquid architecto maiores
+            dolorem magni explicabo, ullam vel voluptates eum vero beatae
+            excepturi iusto aliquam, dolores veritatis, soluta sint illo
+            quisquam libero dolore? Aliquid soluta perferendis quos sapiente
+            eveniet vitae, explicabo assumenda quae facere voluptatum quasi
+            perspiciatis eaque consectetur quaerat dolorum quibusdam voluptas
+            asperiores. Quam itaque accusamus architecto facilis eum ducimus
+            dolores recusandae autem animi corporis molestias aliquam,
+            distinctio id quia. Ex debitis, quaerat cum exercitationem harum.
+          </div>
+          <div class="ourProgramsCardButton">
+            <a href="{% url 'signup' %}">
+              <button class="primaryButton">Get Started</button></a>
+          </div>
+        </div>
+        <div class="ourProgramsCard">
+          <div class="ourProgramsCardHeading">Career4U(Senior)</div>
+          <div class="ourProgramsCardBody">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis adipisci commodi nulla. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Ducimus aliquid architecto maiores
+            dolorem magni explicabo, ullam vel voluptates eum vero beatae
+            excepturi iusto aliquam, dolores veritatis, soluta sint illo
+            quisquam libero dolore? Aliquid soluta perferendis quos sapiente
+            eveniet vitae, explicabo assumenda quae facere voluptatum quasi
+            perspiciatis eaque consectetur quaerat dolorum quibusdam voluptas
+            asperiores. Quam itaque accusamus architecto facilis eum ducimus
+            dolores recusandae autem animi corporis molestias aliquam,
+            distinctio id quia. Ex debitis, quaerat cum exercitationem
+            assumenda voluptas nesciunt quasi odio doloremque optio similiq
+            harum.
+          </div>
+          <div class="ourProgramsCardButton">
+            <a href="{% url 'signup' %}"><button class="primaryButton">Get Started</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="howItWorks">
+    <div>
+      <h1>How it Works</h1>
+      <p>
+        Successful career is a journey, not a destination. Let us travel
+        together.
+      </p>
+    </div>
+    <div style="display: flex">
+      <div class="part1">
+        <ul>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/1.PNG' %}`)">
+            Dashboard
+          </li>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/2.jpg' %}`)">
+            Hello
+          </li>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/3.jpg' %}`)">
+            Hello
+          </li>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/4.jpg' %}`)">
+            Hello
+          </li>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/5.jpg' %}`)">
+            Hello
+          </li>
+          <li onclick="changeImage(`{% static 'images/Images/How we works/6.jpg' %}`)">
+            Hello
+          </li>
+        </ul>
+      </div>
+      <div class="part2">
+        <img src="{% static 'images/Images/How we works/1.PNG' %}" id="howItWorksImg" alt="Img not found" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="part1">
+      <a href="{% url 'index' %}"><img src="{% static 'images/Images/Logo/logo.jpeg' %}" alt="" /></a>
+      <span> All rights Reserved By Career4U &copy;</span>
+    </div>
+    <div class="part2">
+      <a href="#"><span> About Us </span></a>
+      <a href="#"><span> Contact Us </span></a>
+      <a href="#"><span> Terms and Conditions </span></a>
+      <a href="#"><span>Privacy Policy</span></a>
+      <a href="#"><span>FAQ's</span></a>
+    </div>
+    <div class="part3">
+      <div>Follow Us on</div>
+      <img src="{% static 'images/svgs/socialIcons/facebook.svg' %}" alt="" />
+      <img src="{% static 'images/svgs/socialIcons/twitter.svg' %}" alt="" />
+      <img src="{% static 'images/svgs/socialIcons/instagram.svg' %}" alt="" />
+    </div>
+  </footer>
+
+  <df-messenger intent="WELCOME" chat-title="Careers4U" agent-id="ca1f28b7-f50f-4eac-bb43-b32d1e8d41c2"
+    language-code="en"></df-messenger>
+</body>
+<script>
+  let howItWorksImg = document.getElementById("howItWorksImg");
+  function changeImage(img) {
+    howItWorksImg.setAttribute("src", img);
+    howItWorksImg.classList.add("slideLeft");
+    setTimeout(() => {
+      howItWorksImg.classList.remove("slideLeft");
+    }, 600);
+  }
+
+  let hamburgerNavbar = document.querySelector(".hamburgerNavbar");
+  function toggleNav() {
+    if (
+      hamburgerNavbar.style.height == 0 + "px" ||
+      hamburgerNavbar.style.height == 0 + "%" ||
+      hamburgerNavbar.style.height == 0
+    )
+      hamburgerNavbar.style.height = 400 + "px";
+    else if (
+      hamburgerNavbar.style.height == 400 + "px" ||
+      hamburgerNavbar.style.height == 400 + "%" ||
+      hamburgerNavbar.style.height == 400
+    )
+      hamburgerNavbar.style.height = 0 + "px";
+  }
+</script>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</html>

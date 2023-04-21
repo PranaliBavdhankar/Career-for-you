@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+aside {
+  width: 250px;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 2px 0 12px 0 rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+aside ul {
+  list-style-type: none;
+}
+aside ul a li {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 250px;
+  transition: 0.2s;
+}
+aside ul:first-child a li {
+  margin: 5px 0;
+}
+aside ul a {
+  color: black;
+  text-decoration: none;
+}
+aside ul:first-child li:first-child img {
+  border-radius: 50%;
+}
+aside ul:first-child li:last-child {
+  flex-direction: row;
+}
+.divider {
+  height: 2px;
+  width: 100%;
+  background: #9556c888;
+  margin: 0;
+}
+aside ul:last-child a li:hover {
+  background-color: #e4d4f1;
+}
+@media (max-width: 1000px) {
+  aside {
+    position: fixed;
+    top: 00;
+    right: -350px;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    z-index: 999;
+    max-height: 600px;
+  }
+  aside ul:last-child a li {
+    flex-direction: row;
+    height: 40px;
+    width: 200px;
+    justify-content: left;
+  }
+  aside ul:first-child li {
+    width: 200px;
+  }
+  aside ul:last-child a li img {
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+}
+@media (max-height: 550px) {
+  aside {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: -700px;
+    left: 0;
+  }
+  aside ul,
+  aside ul li,
+  aside ul:first-child li {
+    width: 100%;
+  }
+  aside ul li{
+    width: 100%;
+  }
+}

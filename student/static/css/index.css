@@ -1,0 +1,366 @@
+/* Universal changes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+    text-decoration: none;
+  }
+  /* Home section starts here */
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  #home .part1,
+  #home .part2 {
+    width: 50%;
+  }
+  #home .part1 {
+    padding-left: 30px;
+  }
+  #home .part2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #home .homeHeading {
+    font-size: 3rem;
+  }
+  #home .homeContent {
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: 25px;
+  }
+  #home .part2 img:first-child {
+    transition: 0.2s;
+  }
+  #home .part2 img:first-child:hover {
+    transform: scale(1.1);
+  }
+  /* Home section ends here */
+  
+  /* Our Programs Section Starts here */
+  #ourPrograms {
+    display: flex;
+    align-items: center;
+  }
+  #ourPrograms .part1 {
+    width: 40%;
+  }
+  #ourPrograms .part2 {
+    width: 60%;
+  }
+  #ourPrograms .part2 h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #ourPrograms .part2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #ourPrograms .part2 .ourProgramsCardsContainer {
+    display: flex;
+    justify-content: center;
+  }
+  #ourPrograms .part2 .ourProgramsCardsContainer .ourProgramsCard {
+    width: 45%;
+    height: 400px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    margin: 12px;
+    padding: 12px 23px;
+    position: relative;
+    background-color: white;
+  }
+  #ourPrograms
+    .part2
+    .ourProgramsCardsContainer
+    .ourProgramsCard
+    .ourProgramsCardHeading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #9456c8;
+    font-weight: 600;
+  }
+  #ourPrograms
+    .part2
+    .ourProgramsCardsContainer
+    .ourProgramsCard
+    .ourProgramsCardBody {
+    margin-top: 12px;
+  }
+  #ourPrograms
+    .part2
+    .ourProgramsCardsContainer
+    .ourProgramsCard
+    .ourProgramsCardBody::first-letter {
+    font-size: 2rem;
+    color: #9456c8;
+  }
+  #ourPrograms
+    .part2
+    .ourProgramsCardsContainer
+    .ourProgramsCard
+    .ourProgramsCardButton {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Our Programs Section ends here */
+  
+  /* How it works section starts here */
+  
+  #howItWorks {
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: ; */
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  #howItWorks p,
+  #howItWorks h1 {
+    text-align: center;
+  }
+  #howItWorks h1 {
+    font-size: 3rem;
+  }
+  #howItWorks p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: gray;
+  }
+  #howItWorks .part1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #howItWorks .part1 ul li {
+    list-style: none;
+    margin: 20px 0;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #9456c8;
+    padding: 12px 23px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.2s;
+  }
+  #howItWorks .part1 ul li:hover {
+    font-weight: 600;
+    background-color: #9556c880;
+  }
+  #howItWorks .part2 {
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #howItWorks .part2 img {
+    width: 80%;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  #ourPrograms .part1 h1 {
+    display: none;
+  }
+  /* Media Queries section starts here */
+  
+  @media (max-width: 1400px) {
+    #ourPrograms .part1 {
+      width: 30%;
+    }
+    #ourPrograms .part2 {
+      width: 70%;
+    }
+    #ourPrograms .part2 .ourProgramsCardsContainer .ourProgramsCard {
+      padding: 12px;
+    }
+  }
+  @media (max-width: 1130px) {
+    #ourPrograms .part2 .ourProgramsCardsContainer {
+      flex-direction: column;
+    }
+    #ourPrograms .part2 .ourProgramsCardsContainer .ourProgramsCard {
+      width: 95%;
+      height: auto;
+      margin-top: 25px;
+      padding-bottom: 25px;
+    }
+  
+    #home .part2 img:first-child {
+      width: 350px;
+    }
+    #home .homeHeading {
+      font-size: 2.5rem;
+    }
+    #home .homeContent {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 1070px) {
+    #ourPrograms .part1 img {
+      width: 400px;
+    }
+    #howItWorks {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    #howItWorks div:last-child {
+      flex-direction: column;
+    }
+    #howItWorks .part1 {
+      width: 100%;
+      height: auto;
+      margin-top: 25px;
+    }
+    #howItWorks div:last-child ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    #howItWorks div:last-child ul li {
+      margin: 12px;
+    }
+    #howItWorks .part2 {
+      width: 90%;
+      margin: 25px 0;
+      margin: auto;
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #home {
+      max-height: 600px;
+    }
+    #ourPrograms {
+      flex-direction: column;
+    }
+    #ourPrograms .part1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #ourPrograms .part1,
+    #ourPrograms .part2 {
+      width: 100%;
+    }
+    #ourPrograms .part1 {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    #ourPrograms .part1 h1 {
+      font-size: 2.5rem;
+      display: block;
+    }
+    #ourPrograms .part2 h1 {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #home {
+      flex-direction: column-reverse;
+      height: auto;
+      max-height: 100vh;
+    }
+    #home .part2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 400px;
+      margin-top: 50px;
+    }
+    #home .part1,
+    #home .part2 {
+      width: 90%;
+    }
+  
+    #howItWorks div:last-child ul li {
+      margin: 10px 5px;
+    }
+    #howItWorks .part2 {
+      flex-direction: column;
+      margin: 34px auto;
+      height: auto;
+    }
+  
+    #howItWorks .part2 img {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #howItWorks .part2 {
+      height: 400px;
+    }
+  }
+  @media (max-width: 425px) {
+    #home .homeHeading,
+    #ourPrograms .part2 h1,
+    #howItWorks h1 {
+      font-size: 2rem;
+    }
+    #home .part2 {
+      margin-top: 0;
+    }
+  
+    #home .part2 img:first-child {
+      width: 300px;
+    }
+    #ourPrograms .part1 img {
+      width: 100%;
+    }
+    #ourPrograms .part2 {
+      margin-top: 25px;
+    }
+    #howItWorks div:last-child ul li {
+      margin: 12px 0;
+      width: 160px;
+      padding: 12px 5px;
+    }
+    #howItWorks .part2,
+    #howItWorks .part2 img {
+      width: 95%;
+    }
+    #howItWorks p,
+    #home .homeContent {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    @media (min-height: 900px) {
+      #home {
+        height: 800px;
+      }
+    }
+  }
+  @media (min-height: 900px) {
+    #home {
+      height: 750px;
+    }
+  }
+  @media (max-height: 550px) {
+    #home {
+      height: 600px;
+    }
+  }
+  /* Media Queries section ends  here */
+  

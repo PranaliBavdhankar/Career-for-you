@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{fname}} {{lname}} Update Profile</title>
+  <link rel="stylesheet" href="{% static 'css/sidebar.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/dashboardLayout.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/userProfile.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+  <style>
+    .heading {
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mainContainer">
+    <aside>
+      <ul>
+        <a href="{% url 'index' %}">
+          <li>
+            <img src="{% static 'images/Images/Logo/logo.jpeg' %}" width="70" alt="" />
+          </li>
+        </a>
+        <li class="divider"></li>
+        <a href="#">
+          <li onclick="toggleMenu()" class="userNameContainer">
+            <img src="{% static 'images/SVGs/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span style="margin: 0 5px"> {{fname}} {{lname}}</span>
+          </li>
+        </a>
+      </ul>
+      <ul>
+        <li class="divider"></li>
+        <a href="{% url 'dashboard' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/dashboardLogo.svg' %}" width="25" alt="" />
+            <span>Dashboard</span>
+          </li>
+        </a>
+        <a href="">
+          <li style="background-color: #e4d4f1">
+            <img src="{% static 'images/SVGS/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span>Profile</span>
+          </li>
+        </a>
+        <a href="{% url 'assesment' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Test.svg' %}" width="25" alt="" />
+            <span>Assesment</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Reports.svg' %}" width="25" alt="" />
+            <span>Reports</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Session.svg' %}" width="25" alt="" />
+            <span>Courses</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Help.svg' %}" width="25" alt="" />
+            <span>Help</span>
+          </li>
+        </a>
+        <a href="{% url 'logout' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/logout.svg' %}" width="25" alt="" />
+            <span>Logout</span>
+          </li>
+        </a>
+      </ul>
+    </aside>
+    <div class="hamburger" onclick="toggleSideBar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="container">
+      <div class="container">
+        <ul class="typesOfDetails">
+          <li>Personal Details</li>
+        </ul>
+        <form action="/user/update_profile/" method="POST">
+          {% csrf_token %}
+          <div class="itemsContainer">
+            <div class="fetchContainer">
+              <span class="heading" style="width: 20%;">Email: </span>
+              <span class="body"> {{email}} </span>
+            </div>
+            <div class="mainInputContainer">
+              <div class="inputContainer">
+                <span class="heading"> First Name : </span>
+                <input type="text" name="fname" value="{{fname}}" required />
+              </div>
+              <div class="inputContainer">
+                <span class="heading"> Last Name : </span>
+                <input type="text" name="lname" value="{{lname}}" required />
+              </div>
+
+            </div>
+            <div class="mainInputContainer">
+              <div class="inputContainer">
+                <span class="heading"> Phone No : </span>
+                <input type="number" name="mobileno" value="{{mobileno}}" required>
+              </div>
+
+
+              <div class="inputContainer">
+                <label for="age" class="heading">Age: </label>
+                <input type="number" name="age" id="age" value="{{age}}" required />
+              </div>
+            </div>
+            <div class="mainInputContainer">
+              <div class="inputContainer">
+                <label for="DOB" class="heading">Date Of Birth: </label>
+                <input type="date" name="dob" id="dob" value="{{dob}}" / required>
+                <input type="hidden" name="sid" id="sid" value="{{sid}}" />
+              </div>
+
+
+              <div class="inputContainer">
+                <label for="gender" class="heading">Gender</label>
+                <select name="gender" id="gender" value="{{gender}}" required>
+                  {% if gender != 'NULL' %}
+                  <option value="{{gender}}">{{gender}}</option>
+                  {% endif %}
+                  <option value="none">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">female</option>
+                </select>
+              </div>
+            </div>
+            <div class="mainInputContainer">
+
+              <div class="inputContainer">
+                <label for="education" class="heading">Current Education:
+                </label>
+                <input type="text" name="education" id="education" value="{{currentEducation}}" required />
+              </div>
+              <div class="inputContainer">
+                <label for="income" class="heading">Family Income: </label>
+                <input type="number" name="income" id="income" value="{{income}}" required />
+              </div>
+            </div>
+            <div class="mainInputContainer">
+              <div class="inputContainer" style="width: 100%">
+                <label class="heading" for="goals">I wish to become: </label>
+                <textarea name="goals" id="goals" cols="30" rows="10" required>{{goals}}</textarea>
+              </div>
+            </div>
+            <div class="buttonContainer">
+              <button class="primaryButton">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/dashboardLayout.js' %}"></script>
+
+</html>

@@ -1,0 +1,84 @@
+.middle_content{margin-left: 2cm;margin-right: 2cm;margin-top: 3cm;margin-bottom: 3cm;}
+
+.engineering{color: rgb(30, 30, 97);}
+
+.engineering_logo{width: 7cm; height: 7cm;}
+
+.summary{width: 20cm;}
+
+.aeronautical_logo{width: 4cm;height: 3.5cm;margin-left: 1cm;margin-top:0.5cm;}
+.aeronautical{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;align-content: left;margin-left: 1cm;}
+.aeronautical_text{margin-left: cm;font-size: 0.5cm;}
+
+.aerospace_logo{width: 3.6cm;height: 3.0cm;margin-left: 1.1cm;margin-top: 0.7cm;}
+.aerospace{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 9cm;margin-top: -9cm;align-content: left;}
+.aerospace_text{margin-left: cm;font-size: 0.5cm;margin-top: 0.3cm;width: 5cm;}
+
+.architecture_logo{width: 3.6cm;height: 3.9cm;margin-left: 1.1cm;}
+.architecture{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 17cm;margin-top: -9cm;align-content: left;}
+.architecture_text{margin-left: cm;font-size: 0.5cm;}
+
+.ai_logo{width: 3.6cm;height: 3.5cm;margin-left: 1.1cm;margin-top: 0.6cm;}
+.ai{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 25cm;margin-top: -9cm;align-content: left;}
+.ai_text{margin-left: cm;font-size: 0.5cm;width: 5cm;}
+
+.middle_content_2nd_line{margin-top: cm;margin-left: 2cm;}
+
+.how_to{margin-left: 6cm;margin-bottom: 1cm;font-family: sans-serif;color: rgb(30, 30, 97);margin-top: -1.2cm;}
+.how_to_logo{width: 3cm;height: 2cm;align-content: left;margin-left: 3cm;}
+.streams{margin-left: 3cm;margin-top: 1.5cm;}
+
+.how_to_focus{margin-left: 3cm;width: 21cm;font-size: 0.4cm;}
+
+.how_to_01{margin-left: 3cm;margin-right: 3cm;line-height: 0.8cm;font-size: 0.44cm;margin-bottom: 0.8cm;}
+
+.how_to_logo_01{width: 2cm;height: 1cm;margin-left: 3cm;margin-top: 1.5cm;align-items: left;}
+
+.list{margin-left: 6cm;margin-bottom: 2cm;}
+
+.list ul{line-height: 1cm;}
+.list ul li{font-family: sans-serif;font-size: 0.5cm;}
+
+.colleges{margin-left: 5.5cm;margin-top: -0.9cm;}
+
+.biotech_logo{width: 3.6cm;height: 3.0cm;margin-left: 1.1cm;margin-top: 0.7cm;margin-top: 0.7cm;}
+.biotech{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 17cm;margin-top: -9cm;align-content: left;}
+.biotech_text{margin-left: cm;font-size: 0.5cm;margin-top: 0.3cm;}
+
+.chemical_logo{width: 3.5cm;height: 3.4cm;margin-left: 1.1cm;margin-top: 0.5cm;}
+.chemical{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 25cm;margin-top: -9cm;align-content: left;}
+.chhemical_text{margin-left: cm;font-size: 0.4cm;width: 5cm;margin-top: cm;}
+
+
+.civil_logo{width: 4cm;height: 3.5cm;margin-left: 1cm;margin-top:0.5cm;}
+.civil{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;align-content: left;margin-left: 1cm;}
+.civil_text{margin-left: 0.8cm;font-size: 0.5cm;margin-top: 0.5cm;}
+
+.comp_logo{width: 3.6cm;height: 3.0cm;margin-left: 1.1cm;margin-top: 0.9cm;}
+.comp{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 9cm;margin-top: -9cm;align-content: left;}
+.comp_text{margin-left: cm;font-size: 0.5cm;margin-top: 0.3cm;}
+
+.electronics_logo{width: 3.6cm;height: 3.6cm;margin-left: 1.1cm;margin-top: 0.5cm;}
+.electronics{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 17cm;margin-top: -9cm;align-content: left;}
+.electronics_text{margin-left: cm;font-size: 0.5cm;width: 5cm;}
+
+.industrial_logo{width: 3.7cm;height: 3.4cm;margin-left: 1.1cm;margin-top: 0.5cm;}
+.industrial{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 25cm;margin-top: -9cm;align-content: left;}
+.industrial_text{margin-left: cm;font-size: 0.5cm;width: 5cm;margin-top: 0.2cm;}
+
+
+.instrument_logo{width: 4cm;height: 3.5cm;margin-left: 1cm;margin-top:0.7cm;}
+.instrument{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;align-content: left;margin-left: 1cm;}
+.instrument_text{margin-left: cm;font-size: 0.2cm;}
+
+.marine_logo{width: 3.9cm;height: 3.4cm;margin-left: 1.1cm;margin-top: 0.9cm;}
+.marine{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 9cm;margin-top: -9cm;align-content: left;}
+.marine_text{margin-left: cm;font-size: 0.5cm;margin-top: 0.3cm;}
+
+.mech_logo{width: 3.9cm;height: 3.6cm;margin-left: 1.1cm;margin-top: 0.7cm;}
+.mech{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 17cm;margin-top: -9cm;align-content: left;}
+.mech_text{margin-left: cm;font-size: 0.5cm;width: 5cm;}
+
+.metallurgy_logo{width: 3.7cm;height: 3.4cm;margin-left: 1.1cm;margin-top: 0.7cm;}
+.metallurgy{width: 6cm;height: 6cm;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 0.3cm;margin-bottom: 3cm;margin-top: 2cm;margin-left: 25cm;margin-top: -9cm;align-content: left;}
+.metallurgy_text{margin-left: cm;font-size: 0.5cm;width: 5cm;margin-top: 0.2cm;}

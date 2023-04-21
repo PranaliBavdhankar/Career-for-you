@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCareers Portal || Student Dashboard</title>
+
+  <link rel="stylesheet" href=" {% static '/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/style1.css' %}" />
+  <link rel="shortcut icon" href="{% static '/images/Images/Logo/logo.jpeg' %}" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav id="nav" style="justify-content: space-between;">
+    <ul class="left">
+      <li onclick="showHideLoggedInLeft()">
+        <a> <img src="{% static '/images/SVGS/hamburger.svg' %}" width="25px" alt=""> </a>
+      </li>
+      <li class="logoContainer">
+        <a href="#" class="logoContainer">
+          <span>
+            <img class="logoImg" src="{% static '/images/Images/Logo/logo.jpeg' %}" style="width: 55px;" alt="">
+          </span>
+        </a>
+      </li>
+    </ul>
+    <ul class="center"></ul>
+    <ul class="right">
+      <li style="cursor: pointer">
+        <a href="{% url 'logout' %}"><span id="register" class="bordersFill"> Logout </span></a>
+      </li>
+      <li>
+        <a href=""> <span><img src="{% static '/images/SVGS/message.svg' %}" width="30px" alt=""></span> </a>
+      </li>
+      </li>
+      <li>
+        <a href=""> <span><img src="{% static '/images/SVGS/bell.svg' %}" width="25px" alt=""></span> </a>
+      </li>
+      <li class="LoggedInName" style="display: flex; justify-content: center; align-items: center">
+        <a style="display: flex; justify-content: center; align-items: center"> <span> {{fname}} {{lname}} </span> </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="loggedInMainSection">
+    <div class="navLeft" id="navLeft">
+      <ul>
+        <a href="{% url 'dashboard' %}">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="{% static '/images/SVGS/home.svg' %}"
+                width="25px" alt=""> </span>
+            <span class="navLeftName"> Dashboard </span>
+          </li>
+        </a>
+        <a href="/userProfile.html">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="{% static '/images/SVGS/profile.svg' %}"
+              width="25px" alt=""> </span>
+            <span class="navLeftName"> User Profile </span>
+          </li>
+        </a>
+        <a href="/careerProfile.html">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="{% static '/images/SVGS/edit.svg' %}"
+                width="25px" alt=""> </span>
+            <span class="navLeftName" style="color: blue;"> Assesment </span>
+          </li>
+        </a>
+        <a href="{% url 'report' %}">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="{% static '/images/SVGS/bulb.svg' %}"
+                width="25px" alt=""> </span>
+            <span class="navLeftName"> Personal Insights </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img
+                src="{% static '/images/SVGS/direction.svg' %}" width="25px" alt=""> </span>
+            <span class="navLeftName"> Learning Pathways </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img
+                src="{% static '/images/SVGS/computer.svg' %}" width="25px" alt=""> </span>
+            <span class="navLeftName"> Suggested Courses </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="navLeftIcon flexCenter" style="width: 60px;"> <img src="{% static '/images/SVGS/book.svg' %}"
+                width="25px" alt=""> </span>
+            <span class="navLeftName"> Blog </span>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </section>
+    <div id="container" class="quizSection">
+      <h3 class="quizSectionH3">
+        In this section, you will be asked different questions which help us personalize your experience further. Please
+        note that we do not share any of the responses you give in this section with the employers. This section is
+        completely to analyse you for better career planning and this section directly impacts the Career Insights
+        Section and all your recommendations. Please, it is recommended to be honest and answer these questions
+        seriously.
+      </h3>
+      <h4 class="quizSectionH4"> There are 8 sections.<br>
+        You won't be able to edit your response later, hence start only when you are free.<br>
+        Total time needed: 25-30 minutes.</h4>
+      <a id="openQuiz">
+        <button class="_50BgChange">
+          Start Analyzing
+        </button>
+      </a>
+    </div>
+</body>
+<script src="{% static '/js/script.js' %}"></script>
+<script>
+  document.getElementById("openQuiz").addEventListener("click", () => {
+    let confirmOpen = confirm("Are You Sure That You Want to Start the Test?");
+    let openQuizbtn = document.getElementById("openQuiz")
+    if (confirmOpen == true) {
+      openQuizbtn.setAttribute("href", "{% url 'quest' %}");
+
+    }
+  });
+
+</script>
+
+</html>

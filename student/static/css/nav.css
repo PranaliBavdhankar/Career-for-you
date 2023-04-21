@@ -1,0 +1,124 @@
+nav,
+nav ul {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  z-index: 999;
+  position: fixed;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul:nth-child(2) li {
+  margin: 0 12px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  position: relative;
+}
+nav ul:nth-child(2) li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transition: 0.2s;
+  background-color: #9456c8;
+}
+nav ul:nth-child(2) li:hover::before {
+  width: 100%;
+}
+nav ul:last-child li {
+  margin: 0 12px;
+}
+.hamburgerNavbar {
+  display: none;
+}
+.hamburgerLogo {
+  display: none;
+  cursor: pointer;
+}
+.activeNav {
+  height: 500px;
+}
+/* nav ul:last-child li button {
+  padding: 12px 23px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgb(216, 2, 188), rgb(62, 50, 168));
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+} */
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav ul:first-child {
+    margin-left: 20px;
+  }
+  .hamburgerLogo {
+    display: block;
+  }
+  .hamburgerLogo div {
+    background-color: black;
+    width: 50px;
+    height: 3px;
+    z-index: 9999;
+    margin: 7px 0;
+    border-radius: 15px;
+  }
+  .hamburgerNavbar {
+    display: block;
+    position: fixed;
+    top: 80px;
+    z-index: 999;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .hamburgerNavbar ul li {
+    margin: 32px 0;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+  }
+  .hamburgerNavbar ul a {
+    color: black;
+  }
+  nav ul:nth-child(2) {
+    display: none;
+  }
+  nav ul:last-child a:first-child {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav ul:last-child li {
+    display: none;
+  }
+  nav ul:first-child {
+    margin-left: 0px;
+  }
+}

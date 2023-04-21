@@ -1,0 +1,544 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Career4U || About Us </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="{% static 'images/images/logo/favicon.jpg' %}" type="image/x-icon">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'landingPage/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/dripicons.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'landingPage/css/responsive.css' %}">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header-area" style="background: #190a32;">
+        <div id="header-sticky" class="menu-area">
+            <div class="container">
+                <div class="second-menu">
+                    <div class="row align-items-center">
+                        <div class="col-xl-1 col-lg-2">
+                            <div class="logo">
+                                <a href="{% url 'index' %}"><img class="rounded-circle"
+                                        src="{% static 'images/Images/Logo/logo.jpeg' %}" alt="logo"
+                                        style="width:70px;padding-top:10px;padding-bottom:10px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="responsive"><i class="icon dripicons-align-right"></i></div>
+                            <div class="main-menu text-right text-xl-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-sub">
+                                            <a href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li><a href="{% url 'about' %}" style="color: #ff3494;">About Us</a></li>
+                                        <li><a href="{% url 'multipleIntelligence' %}">Multiple Intelligence</a></li>
+                                        <li><a href="{% url 'careerWiki' %}">Career Wiki</a></li>
+                                        <!-- <li class="has-sub"> 
+                                                 <a href="#screen">Other</a>
+                                                 <ul>													
+													<li><a href="#pricing">Pricing</a></li>
+													<li><a href="#testimonios">Testimonios</a></li>
+													 <li><a href="blog.html">Blog</a></li>     
+													<li><a href="blog-details.html">Blog Deatils</a></li> 
+												</ul>
+                                             
+                                            </li>      -->
+                                        <!-- <li><a href="#blog">Blog</a></li> -->
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="{% url 'login' %}" class="btn">Login</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-1 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="{% url 'signup' %}" class="btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <!-- main-area -->
+    <main>
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area d-flex align-items-center"
+            style="background-image:url(/static/landingPage/img/bg/career4u.png); background-position: center center; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="breadcrumb-wrap text-center">
+                            <div class="breadcrumb-title mt-70">
+                                <h2 class="text-dark mt-70"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+        <!-- choose-area -->
+        <section class="choose-area pt-100 pb-60 p-relative"
+            style="background-image: url(/static/landingPage/img/shape/header-sape3.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+            <!-- <div class="chosse-img" style="background-image:url(/static/landingPage/img/bg/easy-m-bg.png)"></div> -->
+            <div class="chosse-img2"><img src="{% static 'landingPage/img/bg/about2.svg' %}" alt="mobile" /></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="choose-wrap">
+                            <div class="section-title w-title left-align mb-25">
+                                <h2 style="justify-content:center;color:#7d4196;">Welcome to "Career4U"</h2>
+                                <h2 style="color: #ff3494;;">A Personalized Multiple Intelligence Enabled Career Path
+                                    Finder.</h2>
+                            </div>
+                            <div class="choose-content">
+                                <p><span style="font-size: 25px;color: #7d4196;text-align: justify;">About Career4U:
+                                    </span> Let Your Intelligences Be Your Career Guide!
+                                    A favorite quotations of Albert Einstein quotes,”Everybody is a genius. But if you
+                                    judge a fish by
+                                    its ability to climb a tree, it will live its whole life believing that it is
+                                    stupid.”
+                                    At ‘Career4U,’we personalize your career path based on your natural intelligence and
+                                    using
+                                    Howard Gardner&#39;s Theory of ‘Multiple Intelligence’. We provide real-time
+                                    insights of your top
+                                    three natural intelligence and potential career mapping based on your natural
+                                    intelligence. We
+                                    further assist you in recommending ‘Best Fit Careers Paths’ with skilling option
+                                    waiting to
+                                    welcome you. 
+                                    Based on students goals and aspiration ‘Career4U’ recommendation system assists
+                                    learners in
+                                    taking informed up skilling courses from DIKSHA, Swayam and Skill referring
+                                    students to some
+                                    of the successful people with their chosen career path.
+                                </p>
+
+                                <div class="choose-btn mt-30">
+                                    <a href="#">
+
+                                        <span class="text" style="text-align: center;"><strong>Explore
+                                                Now</strong></span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose-area-end -->
+
+        <!-- how-app-work -->
+        <section id="features" class="app-work pt-70 pb-100 p-relative"
+            style="background-image: url(/static/landingPage/img/shape/header-sape4.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row align-items-center ">
+
+                    <div class="col-xl-6">
+                        <div class="choose-wrap">
+                            <div class="section-title w-title left-align mb-15">
+                                <h2 style="color: #ff3494;">Our Approach to Career Development</h2>
+                            </div>
+                            <div class="app-work-content mt-20">
+
+                                <div class="text">
+
+                                    <p style="text-align: justify;font-size: 15px;"> ● Career decisions should be based
+                                        on scientific assessments and an equally structured and scientifically curated
+                                        post-assessment counselling mechanism.<br>
+                                        ● Suitability of a particular career might also depend on aspects like
+                                        socio-economic scenario, cultural and faith related factors, inherent talents
+                                        etc., rather than just a person’s psychometric make-up.<br>
+                                        ● In career assessment and planning process, a blend of both quantitative and
+                                        qualitative methods should be used.<br>
+                                        ● Participant-driven learning and decision making: Importance is given to
+                                        strengthening the career selector’s abilities and skills to take responsibility
+                                        for career development.<br>
+                                        ● The role of the career guidance practitioner is to guide and create an
+                                        environment for career discovery.<br>
+                                        ● Comprehensive resources and advanced tools for career planning and
+                                        development: An exhaustive career library framework and various other tools that
+                                        make the process easier, effortless and also accessible to larger sections of
+                                        society.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="{% static 'landingPage/img/bg/careerDevelopment.svg' %}" width="400px"
+                            alt="app-work-img" class="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- how-app-work -->
+
+        <!-- newslater-area -->
+        <section class="newslater-area pt-90 pb-100"
+            style="background-image:url('/static/landingPage/img/bg/subscribe-bg.png');background-size:cover;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="section-title text-center pl-40 pr-40 mb-50">
+                            <h2>Background</h2>
+                            <p style="text-align: justify;">
+                                In the past, one had very limited career choices; life was easy. You simply did what
+                                your parents
+                                told you or one could get career guidance through near relatives, friends and senior. Or
+                                from
+                                people who have made a very good career for themselves, for example Bureaucrats,
+                                Executives,
+                                Engineers, Doctors, Lawyers, and Teachers etc. However, in today’s competitive world
+                                this will
+                                not suffice a budding student who is looking forward to make for him/her a high
+                                performing
+                                career. Unfortunately even today Indian communities carry an incomplete sentiment that
+                                success
+                                is coupled with a standardized score or a high percentage /IQ career. This attitude
+                                limits one’s
+                                perspective for career opportunities’ if they don’t fit into this standard definition of
+                                success.’</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-10">
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-custom" style="background: #fff;color: #000;"
+                                id="send2">Explore Now</button>
+                        </div>
+                        <!-- /Form-email -->
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- newslater-aread-end -->
+
+        <!-- pricing-area -->
+        <section id="pricing" class="pricing-area pt-100 pb-50"
+            style="background-image: url(/static/LandingPage/img/shape/header-sape7.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-title text-center mb-50">
+                            <h2>Why Career4U?</h2>
+                            <p>We at “Career4U” aim to find a career where your natural strengths and talents incline
+                                and
+                                Don’t let marks decide what you should be doing. One way to expand on career
+                                possibilities is to
+                                use the ‘Theory of Multiple Intelligences.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                    <span class="btn">1</span>
+                                </div> -->
+                            <div class="pricing-head">
+                                <h4>Personalized and Holistic Career Guidance</h4>
+
+                            </div>
+
+                            <div class="pricing-body mb-40 text-left">
+
+                                <p>Every individual is unique and hence they should be handled differently. Learn why
+                                    Career4U's personalized and holistic career guidance approach is path breaking in
+                                    this field. </br> <b style="color:white;"> .</b></br> <b style="color:white;"> .</b>
+                                </p>
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Schedule Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                    <span class="btn">2</span>
+                                </div> -->
+                            <div class="pricing-head">
+                                <h4>Perfect Combination of Technology and Human Intelligence</h4>
+
+
+                            </div>
+                            <div class="pricing-body mb-40 text-left">
+                                <p>Learn more about how Career4U eliminates the influence of human biases in the career
+                                    development process by combining the power of machine learning and AI with the
+                                    competence of highly skilled and well trained individuals.</p>
+
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Start Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                    <span class="btn">3</span>
+                                </div>             -->
+                            <div class="pricing-head">
+                                <h4>Career Wiki </><b style="color:white;"> .</b> </br> <b style="color:white;">
+                                        .</b></br> <b style="color:white;"> .</b>
+                                </h4>
+
+
+                            </div>
+
+                            <div class="pricing-body mb-40 text-left">
+
+                                <p>In the sea of content that the internet represents, people find it very challenging
+                                    to obtain quality information about something as dynamicas career fields. Lean how
+                                    Career4U decodes this challenge. </p>
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                    <span class="btn">4</span>
+                                </div>    -->
+                            <div class="pricing-head">
+                                <h4>Institutional Level Career Guidance</br> <b style="color:white;"> .</b>
+                                </h4>
+
+                            </div>
+                            <div class="pricing-body mb-40 text-left">
+
+                                <p>Learn more about how Career4U is planning to create a long lasting change through
+                                    intelligent associations with other stakeholders in the domain.</br> <b
+                                        style="color:white;"> .</b></br> <b style="color:white;"> .</b></br> <b
+                                        style="color:white;"> .</b></br> <b style="color:white;"> .</b> </p>
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Start Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                     <span class="btn">5</span>
+                                 </div>    -->
+                            <div class="pricing-head">
+                                <h4>A Team That is Defined by Innovation and Passion
+                                    </br> <b style="color:white;"> .</b>
+                                </h4>
+
+                            </div>
+                            <div class="pricing-body mb-40 text-left">
+
+                                <p>A dream of a bright future where everyone is able to achieve their full potential
+                                    breaking through all societal barriers is what unites us. Learn more about the
+                                    Career4U team. </p>
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Start Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-box active text-center mb-60">
+                            <!-- <div class="poppuler">
+                                     <span class="btn">6</span>
+                                 </div>    -->
+                            <div class="pricing-head">
+                                <h4>A Reinvented Education where Access to Education is Unhindered
+                                </h4>
+
+                            </div>
+                            <div class="pricing-body mb-40 text-left">
+
+                                <p>We believe that every individual independent of their financial or social condition
+                                    should have access to education of the highest quality. Learn more about Career4U’s
+                                    initiatives. </p>
+                            </div>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn">Start Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+    <!-- footer -->
+    <footer class="footer-bg footer-p pt-60" style="background-image: url(/static/landingPage/img/bg/f-bg.png);
+        background-position: center top;
+        background-size: auto;
+        background-repeat: no-repeat;">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="logo mt-15 mb-15">
+                                <a href="#"><img class="rounded-circle"
+                                        src="{% static 'images/Images/Logo/logo.jpeg' %}" alt="logo"
+                                        style="width: 100px;"></a>
+                            </div>
+                            <div class="footer-text mb-20">
+                                <p>Personalise your career journey <br />
+                                    with Career4U </p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Company News</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Why Career</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Useful Links</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Project</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h5>Contact Us</h5>
+                            </div>
+                            <div class="footer-link">
+                                <div class="f-contact">
+                                    <ul>
+                                        <li>
+                                            <i class="icon dripicons-phone"></i>
+                                            <span>+91 992 246-4596<br>+91 937 366-1157</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon dripicons-mail"></i>
+                                            <span><a href="mailto:info@example.com">career4you123@gmail.com</a><br><a
+                                                    </li>
+                                        <li>
+                                            <i class="fal fa-map-marker-alt"></i>
+                                            <span>Solapur-413007, Maharashtra<br>India</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text">
+                            <p>&copy; 2020 @ Bengle All design Zcube.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+
+    <!-- JS here -->
+    <script src="{% static 'landingPage/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/popper.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/one-page-nav-min.js' %}"></script>
+    <script src="{% static 'landingPage/js/slick.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/ajax-form.js' %}"></script>
+    <script src="{% static 'landingPage/js/paroller.js' %}"></script>
+    <script src="{% static 'landingPage/js/wow.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/js_isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/parallax.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/typed.js' %}"></script>
+    <script src="{% static 'landingPage/js/parallax-scroll.js' %}"></script>
+    <script src="{% static 'landingPage/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/element-in-view.js' %}"></script>
+    <script src="{% static 'landingPage/js/swiper.min.js' %}"></script>
+    <script src="{% static 'landingPage/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>

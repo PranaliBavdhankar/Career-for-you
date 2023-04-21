@@ -1,0 +1,161 @@
+.career_library {
+  margin-top: 3cm;
+  margin-bottom: 3cm;
+  margin-left: 2cm;
+  margin-right: 2cm;
+  margin-bottom: cm;
+}
+
+.library_logo {
+  width: 25cm;
+  height: 10cm;
+  margin-top: -3cm;
+}
+
+.what_career {
+  margin: 1rem 0;
+  color: #ff3494;
+}
+.career4u {
+  color: #884096;
+}
+.one {
+  height: 7cm;
+  width: 7cm;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.6cm;
+  font-family: sans-serif;
+  font-weight: 0;
+  border-radius: 0.3cm;
+  margin-right: 2cm;
+  margin-top: 1.5cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-content: left;
+  margin-left: 1cm;
+}
+
+.two {
+  height: 7cm;
+  width: 7cm;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.6cm;
+  font-family: sans-serif;
+  font-weight: 0;
+  border-radius: 0.3cm;
+  margin-right: cm;
+  margin-top: 1.5cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-content: left;
+  margin-left: 8.8cm;
+  margin-top: -7cm;
+}
+
+.three {
+  height: 7cm;
+  width: 7cm;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.6cm;
+  font-family: sans-serif;
+  font-weight: 0;
+  border-radius: 0.3cm;
+  margin-right: cm;
+  margin-top: 1.5cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-content: left;
+  margin-left: 16.6cm;
+  margin-top: -7cm;
+}
+
+.four {
+  height: 7cm;
+  width: 7cm;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.6cm;
+  font-family: sans-serif;
+  font-weight: 0;
+  border-radius: 0.3cm;
+  margin-right: cm;
+  margin-top: 1.5cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-content: left;
+  margin-left: 24.5cm;
+  margin-top: -7cm;
+}
+
+.allied_medical_sci_logo {
+  width: 5cm;
+  height: 5cm;
+  margin-left: 0.9cm;
+}
+.allied_medical_sci_text {
+  width: 5cm;
+}
+
+.maths_logo {
+  width: 4cm;
+  height: 4cm;
+  margin-left: 1.5cm;
+  margin-top: 0.7cm;
+}
+.maths_text {
+  padding-top: 0.5cm;
+}
+
+.social_sci_logo {
+  width: 4cm;
+  height: 4cm;
+  margin-left: 1.5cm;
+  margin-top: 0.9cm;
+}
+
+.art_logo {
+  width: 6cm;
+  height: 7cm;
+  margin-left: 0.5cm;
+  margin-top: -1cm;
+}
+.art_text {
+  margin-top: -0.8cm;
+}
+
+.education_logo {
+  width: 6cm;
+  height: 6cm;
+  margin-left: 0.5cm;
+  margin-top: -0.5cm;
+  margin-bottom: cm;
+}
+.education_text {
+  margin-top: -0.3cm;
+}
+
+.social_logo {
+  width: 5cm;
+  height: 6cm;
+  margin-left: 1cm;
+  margin-top: cm;
+}
+.social_text {
+  margin-top: -0.5cm;
+}
+
+.animation_logo {
+  width: 4cm;
+  height: 5cm;
+  margin-left: 1.5cm;
+  margin-top: 0.8cm;
+}
+.animation_text {
+  margin-top: -0.4cm;
+}
+
+.tourism_logo {
+  width: 4.5cm;
+  height: 3cm;
+  margin-left: 1.5cm;
+  margin-top: 0.8cm;
+  margin-top: 1.5cm;
+}
+.tourism_text {
+  margin-top: 1cm;
+}

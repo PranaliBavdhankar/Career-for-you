@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="{% static '/css/utilities.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/404Error.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="oops">Oops! Page Not Found.</h1>
+      <img src="{% static 'images/svgs/404Error.svg' %}" alt="" />
+      <div class="subContainer">
+        <h1>Sorry we can't find the page you're looking for.</h1>
+        <a href="{% url 'index' %}"> <button class="primaryButton">Go Back Home</button></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.bordersFill {
+  border: 2px solid #546f73;
+  padding: 5px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.4s;
+  color: black;
+  cursor: pointer;
+}
+.bordersFill:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 12px 0px violet;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._50BgChange {
+  width: 50rem;
+  padding: 7px 5px;
+  font-size: 1.2rem;
+  height: 40px;
+  background-color: #ffea4f;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+._50BgChange > a {
+  color: black;
+}
+._50BgChange:hover a{
+  color: #ffea4f;
+}
+._50BgChange:hover {
+  background: #000;
+  color: #ffea4f;
+}

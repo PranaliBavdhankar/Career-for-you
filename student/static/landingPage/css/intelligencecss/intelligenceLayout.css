@@ -1,0 +1,35 @@
+h2 {
+  margin-top: 160px;
+  text-align: center;
+  color: #ff3494;
+}
+h1 {
+  margin-left: 80px;
+  color: #ff3494;
+  margin-top: 60px;
+}
+.para {
+  margin: 10px;
+  margin-left: 80px;
+  width: 800px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: justify;
+}
+.v1 {
+  margin-top: -330px;
+  float: right;
+  width: 440px;
+  height: 300px;
+  margin-right: 120px;
+}
+.photos {
+  width: 300px;
+  height: 300px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.peoples {
+  display: inline-block;
+}

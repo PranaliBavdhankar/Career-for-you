@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assesment</title>
+  <link rel="stylesheet" href="{% static 'css/sidebar.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/dashboardLayout.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/assesment.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <aside>
+      <ul>
+        <a href="{% url 'index' %}">
+          <li>
+            <img src="{% static 'images/Images/Logo/logo.jpeg' %}" width="70" alt="" />
+          </li>
+        </a>
+        <li class="divider"></li>
+        <a href="#">
+          <li onclick="toggleMenu()" class="userNameContainer">
+            <img src="{% static 'images/SVGs/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span style="margin: 0 5px"> {{fname}} {{lname}} </span>
+          </li>
+        </a>
+      </ul>
+      <ul>
+        <li class="divider"></li>
+        <a href="{% url 'dashboard' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/dashboardLogo.svg' %}" width="25" alt="" />
+            <span>Dashboard</span>
+          </li>
+        </a>
+        <a href="{% url 'userprofile' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span>Profile</span>
+          </li>
+        </a>
+        <a href="">
+          <li style="background-color: #e4d4f1">
+            <img src="{% static 'images/SVGS/Dashboard/Test.svg' %}" width="25" alt="" />
+            <span>Assesment</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Reports.svg' %}" width="25" alt="" />
+            <span>Reports</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Session.svg' %}" width="25" alt="" />
+            <span>Courses</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Help.svg' %}" width="25" alt="" />
+            <span>Help</span>
+          </li>
+        </a>
+        <a href="{% url 'logout' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/logout.svg' %}" width="25" alt="" />
+            <span>Logout</span>
+          </li>
+        </a>
+      </ul>
+    </aside>
+    <div class="hamburger" onclick="toggleSideBar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="container">
+      <div class="container">
+        <div class="content">
+          <div class="bold">
+            In this section, you will be asked different questions which help
+            us personalize your experience further. Please note that we do not
+            share any of the responses you give in this section with the
+            employers. This section is completely to analyse you for better
+            career planning and this section directly impacts the Career
+            Insights Section and all your recommendations. Please, it is
+            recommended to be honest and answer these questions seriously.
+          </div>
+          <br />
+          <div class="gray">
+            You won't be able to edit your response later, hence start only
+            when you are free.
+          </div>
+
+          <br />
+          <div class="gray">Total time needed: 25-30 minutes.</div>
+        </div>
+        <div class="button">
+          <a href="{% url 'quiz' %}" style="width:100%; display:flex; justify-content:center; text-decoration:none">
+            <button class="primaryButton" style="width: 50%">
+              Start Analyzing
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/dashboardLayout.js' %}"></script>
+
+</html>

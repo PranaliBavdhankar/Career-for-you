@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style1.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/link.css' %}" />
+</head>
+
+<body>
+    <div class="quizNav">
+        <h1>The Multiple Intelligence Quiz</h1>
+        <br />
+        <span style="
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+          ">
+            For each of the statement below choose the number between 1 and 5 to
+            rate how the describes you
+        </span>
+        <div class="optionsOfQuiz">
+            <span>1) No, the statement is not at all like me.</span>
+            <span>2) The statement is little like me.</span>
+            <span>3) The statement is somewhat like me.</span><br />
+            <span>4) The statement is a lot like me.</span>
+            <span>5) Yes, the statement is definitely me.</span>
+        </div>
+    </div>
+
+    <form action="/user/handle_quest/" class="quesForm" method="POST">
+        {% csrf_token %}
+        <div class="queContainer">
+            <p> Pollution makes me angry. </p>
+            <div class="options">
+                <select name="q1c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p>I notice similarities and differences in trees, flowers and other things in nature.</p>
+            <div class="options">
+                <select name="q2c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p> I feel very strongly about protecting the environment. </p>
+            <div class="options">
+                <select name="q3c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p>I enjoy watching nature programs on television. </p>
+            <div class="options">
+                <select name="q4c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p> I engage in 'clean-up days.</p>
+            <div class="options">
+                <select name="q5c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p>I like planting and caring for a garden.</p>
+            <div class="options">
+                <select name="q6c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p> I enjoy fishing, bushwalking and bird-watching.</p>
+            <div class="options">
+                <select name="q7c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="queContainer">
+            <p> When I leave school, I hope to work with plants and animals.</p>
+            <div class="options">
+                <select name="q8c6" id="" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
+        <div> <input type="submit" class="nextButton _50BgChange" value="Next"> </div>
+    </form>
+    <div class="bubblesContainer">
+        <span class="bub a "></span>
+        <span class="bub b "></span>
+        <span class="bub c "></span>
+        <span class="bub d"></span>
+        <span class="bub e"></span>
+        <span class="bub f"></span>
+        <span class="bub g"></span>
+        <span class="bub h"></span>
+        <span class="bub i"></span>
+        <span class="bub j "></span>
+        <span class="bub k"></span>
+    </div>
+</body>
+
+</html>

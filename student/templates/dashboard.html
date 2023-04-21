@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{% static 'css/sidebar.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/dashboardLayout.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <aside>
+      <ul>
+        <a href="{% url 'index' %}">
+          <li>
+            <img src="{% static 'images/Images/Logo/logo.jpeg' %}" width="70" alt="" />
+          </li>
+        </a>
+        <li class="divider"></li>
+        <a href="#">
+          <li onclick="toggleMenu()" class="userNameContainer">
+            <img src="{% static 'images/SVGs/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span style="margin: 0 5px"> {{fname}} {{lname}} </span>
+          </li>
+        </a>
+      </ul>
+      <ul>
+        <li class="divider"></li>
+        <a href="">
+          <li style="background-color: #e4d4f1">
+            <img src="{% static 'images/SVGS/Dashboard/dashboardLogo.svg' %}" width="25" alt="" />
+            <span>Dashboard</span>
+          </li>
+        </a>
+        <a href="{% url 'userprofile' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/profile.svg' %}" width="25" alt="" />
+            <span>Profile</span>
+          </li>
+        </a>
+        <a href="{% url 'assesment'%}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Test.svg' %}" width="25" alt="" />
+            <span>Assesment</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Reports.svg' %}" width="25" alt="" />
+            <span>Reports</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Session.svg' %}" width="25" alt="" />
+            <span>Courses</span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/Help.svg' %}" width="25" alt="" />
+            <span>Help</span>
+          </li>
+        </a>
+        <a href="{% url 'logout' %}">
+          <li>
+            <img src="{% static 'images/SVGS/Dashboard/logout.svg' %}" width="25" alt="" />
+            <span>Logout</span>
+          </li>
+        </a>
+      </ul>
+    </aside>
+    <div class="hamburger" onclick="toggleSideBar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="container">
+      <div class="mainCardContainer">
+        <div class="cardContainer">
+          <div class="box">
+            <div class="heading">Profile Progress</div>
+            <div class="body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Provident, mollitia nostrum. Pariatur inventore quasi
+              voluptatem, vitae et, delectus eum officia modi tenetur corrupti
+              quibusdam sequi rerum a ab cum accusantium?
+            </div>
+          </div>
+          <div class="button">
+            <a href="{% url 'userprofile' %}">
+              <button>View Profile</button>
+            </a>
+          </div>
+        </div>
+        <div class=" cardContainer">
+          <div class="box">
+            <div class="heading">Assesment Progress</div>
+            <div class="body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Provident, mollitia nostrum. Pariatur inventore quasi
+              voluptatem, vitae et, delectus eum officia modi tenetur corrupti
+              quibusdam sequi rerum a ab cum accusantium?
+            </div>
+          </div>
+          <div class="button">
+            <button>View Profile</button>
+          </div>
+        </div>
+        <div class="cardContainer">
+          <div class="box">
+            <div class="heading">Assesment Report</div>
+            <div class="body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Provident, mollitia nostrum. Pariatur inventore quasi
+              voluptatem, vitae et, delectus eum officia modi tenetur corrupti
+              quibusdam sequi rerum a ab cum accusantium?
+            </div>
+          </div>
+          <div class="button">
+            <button>View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/dashboardLayout.js' %}"></script>
+
+</html>

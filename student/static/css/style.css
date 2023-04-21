@@ -1,0 +1,963 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s all linear;
+  list-style-type: none;
+  list-style: none;
+  /* color: black; */
+  text-decoration: none;
+}
+
+/* div color */
+
+/* navbar Section starts here */
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.2);
+  /* font-family: "Baloo Bhai 2", cursive; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: white;
+}
+#nav ul {
+  display: flex;
+}
+#nav ul li,
+#nav ul li a,
+#nav ul li a span {
+  text-decoration: none;
+}
+#nav ul li {
+  padding: 2px 12px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+#nav .center {
+  justify-content: space-around;
+}
+#nav .center li {
+  text-align: center;
+  margin: 2px 15px;
+  padding: 5px 12px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  font-weight: 700;
+}
+.navCenterItemSpan {
+  color: black;
+}
+#nav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 0%;
+  border-bottom: 2px solid black;
+}
+#nav .center li:hover::before {
+  width: 100%;
+}
+#nav .center li:hover .navCenterItemSpan {
+  color: #9456c8;
+}
+
+#nav .right li {
+  margin: 2px 12px;
+}
+#login,
+#register,
+.bordersFill {
+  background: linear-gradient(90deg, rgb(216, 2, 188), rgb(62, 50, 168));
+  color: white;
+  width: 150px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+/* navbar ends here */
+
+/* home section start here */
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeHeading {
+  top: 150px;
+  left: 50px;
+  width: 50%;
+  /* font-family: "Rubik", sans-serif; */
+}
+.homeunshapedBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Rotate section starts here */
+
+.rotatedBox {
+  margin-right: 82px;
+}
+.rotate {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(208, 232, 240);
+  transform: rotate(45deg);
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+.rotate2 {
+  height: 250px;
+  width: 250px;
+  background-color: lightblue;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
+  transition-delay: 0.1s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotateHeading {
+  transform: rotate(270deg);
+  font-size: 2rem;
+  /* font-family: "Baloo Bhai 2", cursive; */
+  text-align: center;
+}
+.rotate:hover .rotateHeading {
+  transform: rotate(225deg);
+}
+.rotateHeading > span {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(132, 0, 255);
+}
+.rotate:hover {
+  transform: rotate(135deg) scale(1.1);
+}
+.rotate:hover .rotate2 {
+  transform: rotate(0deg);
+}
+._tip {
+  position: absolute;
+  font-size: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: 0.2s all ease;
+  /* font-family: "Poppins", sans-serif; */
+}
+._tip:first-child {
+  top: 110px;
+  left: -162px;
+  transform: rotate(270deg) scale(0);
+  transition-delay: 0.5s;
+}
+._tip:nth-child(2) {
+  top: -50px;
+  left: 00px;
+  transform: scale(0);
+  transition-delay: 0.7s;
+}
+._tip:nth-child(3) {
+  top: 114px;
+  left: 165px;
+  transform: rotate(90deg) scale(0);
+  transition-delay: 0.9s;
+}
+._tip:nth-child(4) {
+  top: 275px;
+  transform: rotate(180deg) scale(0);
+  transition-delay: 1.1s;
+}
+.rotate:hover ._tip:first-child {
+  transform: scale(1) rotate(270deg);
+}
+.rotate:hover ._tip:nth-child(2) {
+  transform: scale(1);
+}
+.rotate:hover ._tip:nth-child(3) {
+  transform: rotate(90deg) scale(1);
+}
+.rotate:hover ._tip:nth-child(4) {
+  transform: scale(1) rotate(180deg);
+}
+/* Rotate section end here */
+
+/* Bg brain */
+.bgBrainImageContainer,
+.bgBrainImageContainer .bgBrainImage {
+  background: white;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.bgBrainImageContainer {
+  position: relative;
+  z-index: 1;
+}
+.bgBrainImageContainer img:first-child:hover {
+  transform: scale(1.1);
+}
+
+/* home section ends here */
+
+/* Our Programs starts here */
+#ourPrograms {
+  display: flex;
+}
+.ourProgrmasImage {
+  display: flex;
+  width: 40%;
+}
+.ourProgramsContent {
+  width: 60%;
+}
+.ourProgramsContent h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.ourProgramsCardContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ourProgrmsCard {
+  width: 375px;
+  height: 420px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  margin: 23px 12px 5px 0;
+  position: relative;
+  padding: 12px;
+}
+.ourProgrmsCardHeading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.ourProgrmsCardContent {
+  margin-top: 23px;
+}
+.outProgramsButton {
+  position: absolute;
+  bottom: 0;
+}
+.bordersFill {
+  border-radius: 25px;
+}
+/* Our Programs ends here */
+
+/* Brain section */
+.brain {
+  height: 90vh;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: -1;
+}
+
+.brain marquee {
+  height: 90vh;
+  z-index: -1;
+}
+
+/* Login section */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
+.setUpContainer {
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+#closeLoginandSignUp {
+  transition-delay: 0.2s;
+  position: absolute;
+  bottom: 3%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+  transform: scale(0);
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: -11111;
+}
+.content header {
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+  border: 2px solid black;
+}
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  /* font-family: "Poppins", sans-serif; */
+}
+.space {
+  margin-top: 16px;
+}
+.show {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  /* font-family: "Montserrat", sans-serif; */
+}
+.pass-key:valid ~ .show {
+  display: block;
+}
+.pass {
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a {
+  color: black;
+  text-decoration: none;
+  /* font-family: "Poppins", sans-serif; */
+}
+.pass:hover a {
+  text-decoration: underline;
+}
+.field input[type="submit"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  /* font-family: "Montserrat", sans-serif; */
+}
+.field input[type="submit"]:hover {
+  background: #2691d9;
+}
+.login {
+  color: white;
+  margin: 20px 0;
+  /* font-family: "Poppins", sans-serif; */
+}
+.links {
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.facebook,
+.instagram {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook {
+  margin-left: 0;
+  background: #4267b2;
+  border: 1px solid #3e61a8;
+}
+.instagram {
+  background: #e1306c;
+  border: 1px solid #df2060;
+}
+.facebook:hover {
+  background: #3e61a8;
+}
+.instagram:hover {
+  background: #df2060;
+}
+.links i {
+  font-size: 17px;
+}
+i span {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  /* font-family: "Poppins", sans-serif; */
+}
+.signup {
+  font-size: 15px;
+  color: black;
+  /* font-family: "Poppins", sans-serif; */
+  margin-top: 30px;
+}
+.signup a {
+  color: #3498db;
+  text-decoration: none;
+  cursor: pointer;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+/* login ends here */
+
+/* sign up  section */
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-family: "poppins"; */
+}
+.signup-box > h1 {
+  text-align: center;
+  padding: 15px;
+}
+.signup-box > h4 {
+  text-align: center;
+}
+.signup-box form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  outline: none;
+}
+input[type="button"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.para-2 {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+.para-2 a {
+  color: #3498db;
+}
+.para-2 a:hover {
+  text-decoration: underline;
+}
+/* Logged In pages Starts here */
+.LoggedInName,
+.LoggedInName > a {
+  font-size: 1.1rem;
+  /* font-family: poppins; */
+  text-transform: capitalize;
+}
+.loggedInMainSection {
+  display: flex;
+}
+.navLeft {
+  width: auto;
+  padding: 50px 0 0 0;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 78px;
+  left: 0;
+  border-right: 2px solid rgba(157, 157, 218, 0.596);
+}
+.navLeft ul {
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s all linear;
+  padding-top: 70px;
+  height: 81vh;
+  padding-left: 10px;
+}
+.navLeft ul a {
+  text-decoration: none;
+  color: black;
+}
+.navLeftIcon {
+  height: 35px;
+  width: 35px;
+}
+.navLeft ul li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s all linear;
+  /* width: 220px; */
+}
+.navLeft ul li:hover {
+  background: rgb(231, 231, 231);
+}
+.navLeft ul li span {
+  padding: 0 4px;
+  overflow: hidden;
+}
+.navLeft ul li span:nth-child(2) {
+  font-size: 1rem;
+  font-family: poppins;
+}
+
+/* Dashboard Starts here */
+#container {
+  height: 88vh;
+  width: 80%;
+  margin: 80px 0 0 260px;
+  flex-direction: column;
+}
+#container > h1 {
+  margin-bottom: 45px;
+  font-size: 2rem;
+  /* font-family: "Baloo Bhai 2", cursive; */
+}
+#container > .profileBox {
+  height: 330px;
+  width: 700px;
+  /* background-color: red; */
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 12px 23px;
+  /* font-family: poppins; */
+}
+
+#container .profileBoxName {
+  justify-content: start;
+  /* font-family: poppins; */
+}
+#container .profileBoxName > h2 {
+  margin-left: 25px;
+}
+.profileBoxBody {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: gray;
+}
+.profileBoxBody #personalityTraits {
+  font-size: 0.9rem;
+  line-height: 3rem;
+}
+.personalityTraitsItems {
+  font-size: 0.8rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.personalityTraitsItems span {
+  background: yellow;
+  padding: 2px;
+  color: black;
+  border-radius: 10px;
+  margin: 0 3px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.profileCompleted {
+  width: 90%;
+  height: 25px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  line-height: 25px;
+  position: relative;
+}
+.profileCompleted::before {
+  content: "";
+  background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+.amountOfProfileCompleted {
+  font-weight: 900;
+  color: red;
+}
+.editButton {
+  margin-left: 79%;
+  margin-top: 8%;
+  background-color: none;
+}
+
+/* User profile section starts */
+.userProfileForm {
+  width: 90%;
+}
+.personalDetails h1,
+.educationalDetails h1 {
+  font-size: 2rem;
+  /* font-family: poppins; */
+  color: blue;
+  line-height: 4rem;
+}
+.personalDetailsForm input,
+.educationalDetailsForm input {
+  margin: 10px 3px;
+  width: 50%;
+  border: 2px solid black;
+}
+.dividerLine {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin: 12px 0;
+}
+.backImage {
+  position: fixed;
+  bottom: 0;
+  right: 00px;
+}
+/* User profile section ends */
+/* Dashboard ends here */
+/* Quiz Section Starts here */
+.quizSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quizSectionH3,
+.quizSectionH4 {
+  width: 90%;
+  /* font-family: poppins; */
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.quizSectionH3 {
+  margin-bottom: 50px;
+}
+.quizSectionH4 {
+  font-size: 1rem;
+  color: gray;
+  line-height: 2rem;
+  margin-bottom: 100px;
+}
+/* Quiz Section ends here */
+/* Open Quiz starts Here */
+.quizNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  /* font-family: "Times New Roman", Times, serif; */
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.1);
+  height: 250px;
+}
+.quizNav h1 {
+  font-size: 3rem;
+  /* font-family: "Poppins", sans-serif; */
+}
+.optionsOfQuiz {
+  margin-top: 75px;
+  font-size: 1.5rem;
+}
+.optionsOfQuiz span {
+  line-height: 1.5rem;
+}
+.quizContainer {
+  margin-top: 20rem;
+  text-align: center;
+  font-size: 1.2rem;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
+    /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  height: 50vh;
+}
+#quizQuestion {
+  font-size: 2rem;
+}
+.options {
+  display: flex;
+  justify-content: center;
+}
+.options div {
+  margin: 30px 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options div label {
+  margin-left: 7px;
+}
+.options div input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+/* Open Quiz ends Here */
+/* Logged In pages ends here */
+
+/* CSS classes for new sign up form start here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signUpMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signUpContainer {
+  padding: 45px 70px;
+  width: 555px;
+  box-shadow: 0 0 5px 0 rgba(00, 0, 0, 0.1);
+  background-color: white;
+}
+.signUpPageLine {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin-top: 30px;
+}
+.signUpForm {
+  margin-top: 50px;
+}
+.signUpContainer h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.signUpInputContainer {
+  margin-top: 38px;
+}
+
+.signUpInputTag {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #cbcbcb;
+  width: 100%;
+  padding-bottom: 6px;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
+}
+.signUpInputTag::placeholder {
+  font-weight: 100;
+}
+.signUpInputTag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  transition: 0.2s;
+  z-index: 2;
+  background-color: red;
+}
+.signUpInputTag:active::before,
+.signUpInputTag:focus::before,
+.signUpInputTag:target::before,
+.signUpInputTag:hover::before {
+  width: 100%;
+}
+.submit button {
+  padding: 8px 45px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  height: 50px;
+  background: linear-gradient(90deg, #d802bc, #3e32a8);
+  color: white;
+  font-weight: 600;
+}
+.bgImg1 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translateY(50%, 50%);
+  z-index: -1;
+}
+.bgImg2 {
+  position: absolute;
+  top: 12%;
+  right: 27%;
+  transform: translateY(50%, 50%);
+  z-index: -1;
+}
+/* CSS new signup form end here */
+
+/* CSS new login form start here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.login-form {
+  background: #fff;
+  width: 450px;
+  height: 300px;
+  margin: 65px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+.login-form h1 {
+  padding: 35px 35px 0 35px;
+  font-weight: 300;
+  color: #000d47;
+}
+.login-form .content {
+  padding: 35px;
+  text-align: center;
+}
+.login-form .input-field {
+  padding: 12px 5px;
+}
+.login-form .input-field input {
+  font-size: 16px;
+  display: block;
+  /* font-family: "Rubik", sans-serif; */
+  width: 100%;
+  padding: 10px 1px;
+  border: 0;
+  border-bottom: 1px solid #747474;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.login-form .input-field input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input::-moz-placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input::placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input:focus {
+  border-color: #222;
+}
+.login-form a.link {
+  text-decoration: none;
+  color: #337ab7;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
+}
+.login-form .action {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+.login-form .action button {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  margin: 15px;
+  /* font-family: "Helvetica-Medium", sans-serif; */
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d802bc, #3e32a8);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 40px;
+}
+.login-form .action button:hover {
+  background: #d8d8d8;
+  color: #d802bc;
+}
+.login-form .action button:nth-child(2) {
+  color: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+}
+.login-form .action button:nth-child(2):hover {
+  background: #d802bc;
+}
+
+/* CSS new login form end here */
